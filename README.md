@@ -1,5 +1,5 @@
 # Exon-capture to Phylogeny
-Last Update: 2018-10-18
+Last Update: 2018-10-23
 
 ### Description
 In this project I will be developing scripts to generate a phylogenetic tree using exon-capture data. I have test .fastq files of goby (Gobiidae) sequences from Kuang et al. 2018 and will use methods from the same publication as a framework for developing reproducible scripts which I can then apply to my own flatfish (Pleuronectidae) sequences when they arrive.
@@ -40,6 +40,7 @@ Contents:
 
     analysis/
     2018-10-18 (Empty)
+    2018-10-23 added FastQC/ with fastqc output (Not on GitHub)
 
     calder-exon-capture.ipynb
     2018-10-18 Jupyter project associated with the project.
