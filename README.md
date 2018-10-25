@@ -40,8 +40,8 @@ Contents:
 
     analysis/
     2018-10-18 (Empty)
-    2018-10-23 added fastqc/ with fastqc output (Not on GitHub)
-    2018-10-25 added trimgalore/ with trimgalore output (Not on GitHub)
+    2018-10-23 added fastqc/ with fastqc output
+    2018-10-25 added trimgalore/ with trimgalore output
     
     calder-exon-capture.ipynb
     2018-10-18 Jupyter project associated with the project.
