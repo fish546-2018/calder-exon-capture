@@ -1,10 +1,10 @@
 # Exon-capture to Phylogeny
-Last Update: 2018-10-25
 
-### Description
+***
+
+## Description
 In this project I will be developing scripts to generate a phylogenetic tree using exon-capture data. I have test .fastq files of goby (Gobiidae) sequences from Kuang et al. 2018 and will use methods from the same publication as a framework for developing reproducible scripts which I can then apply to my own flatfish (Pleuronectidae) sequences when they arrive.
-
-###### Workflow from Kuang et al. 2018 is as follows:
+##### Workflow from Kuang et al. 2018 is as follows:
 1. Raw reads from Illumina sequencer
 2. BCL to fastq format demultiplex
 3. Remove adapter sequences and low quality score reads
@@ -26,34 +26,42 @@ In this project I will be developing scripts to generate a phylogenetic tree usi
 - Week 1: Get oriented in Bash, Jupyter, GitHub
 - Week 2: Obtain raw data
 - Week 3: Quality check data and install required programs
-- Week 4 (planned): Trim adapters and filter low quality sequences (Step 4)
+- Week 4: Trim adapters and filter low quality sequences (Step 4)
 - Week 5 (planned): Start assembling filtered reads into contigs (Step 5)
 
 ### Details
-
 Project Directory Location:
 
-    Local  - /Users/calderatta/Desktop/FISH\ 546\ -\ Bioinformatics/project/
-    GitHub - /Users/calderatta/Documents/GitHub/calder-exon-capture/
+- Local:  `/Users/calderatta/Desktop/FISH\ 546\ -\ Bioinformatics/project/`
+- GitHub: `/Users/calderatta/Documents/GitHub/calder-exon-capture/`
 
 Contents:
 
-    analysis/
-    2018-10-18 (Empty)
-    2018-10-23 added fastqc/ with fastqc output
-    2018-10-25 added trimgalore/ with trimgalore output
-    
-    calder-exon-capture.ipynb
-    2018-10-18 Jupyter project associated with the project.
+- `analysis/` Results from various analyses.
+   - `fastqc/` Output from fastqc (2018-10-23)
+   - `merge/`  Output from cat (2018-10-26)(Empty on GitHub)
+   - `trimgalore/`  Output from trimgalore (2018-10-26)(Empty on GitHub)
+- `data/` Contains 28 source .fastq files. (Empty on GitHub)
+- `kuang-et-al-2018/` Contains publication and associated supplamentary material. (Empty on GitHub)
+- `notebooks/` Jupyter notebooks associated with this project.
+    - `main.ipynb`
+    - `installation.ipynb`
+- `README.md` You Are Here! Contains details about project, organization, and history.
+- `scripts/` (Empty)
 
-    kuang-et-al-2018/ (Not on GitHub)
-    2018-10-18 Contains publication and associated supplamentary material.
 
-    README.md
-    2018-10-18 You Are Here! Contains details about project, organization, and history.
+### History
 
-    scripts/
-    2018-10-18 (Empty)
 
-    data/
-    2018-10-18 Contains source .fastq files (Empty on GitHub)
+2018-10-18
+- Started README.md. Local directory contains `analysis/` (empty), `calder-exon-capture.ipynb`, `data/`, `kuang-et-al-2018/`, `README.md`, `scripts/` (empty). GitHub directory contains `calder-exon-capture.ipynb`, `README.md`.
+
+2018-10-23
+- FastQC completed. `fastqc` output in `analysis/fastqc/`.
+
+2018-10-25
+- Added `analysis/` to GitHub.
+
+2018-10-26
+- Merged multiple lanes. `cat` output in `analysis/merge/`. Trimmed adapters. `trimgalore` output in `analysis/trimgalore/`. `calder-exon-capture.ipynb` renamed `main.ipynb` and moved to `notebooks/`. Created `notebooks/installation.ipynb`
+
