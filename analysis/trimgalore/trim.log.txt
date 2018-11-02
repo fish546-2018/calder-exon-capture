@@ -1,0 +1,3044 @@
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Path to Cutadapt set as: '/Applications/bio-tools/cutadapt-master/cutadapt' (user defined)
+1.18
+Cutadapt seems to be working fine (tested command '/Applications/bio-tools/cutadapt-master/cutadapt --version')
+Writing report to 'TORN_Pool_10_S10_R1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_10_S10_R1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_10_S10_R1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' from file TORN_Pool_10_S10_R1.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC TORN_Pool_10_S10_R1.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 75.03 s (19 us/read; 3.13 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               3,917,453
+Reads with adapters:                 1,808,530 (46.2%)
+Reads written (passing filters):     3,917,453 (100.0%)
+
+Total basepairs processed:   587,617,950 bp
+Quality-trimmed:              53,785,496 bp (9.2%)
+Total written (filtered):    517,948,187 bp (88.1%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC; Type: regular 3'; Length: 34; Trimmed: 1808530 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 27.9%
+  C: 13.1%
+  G: 52.9%
+  T: 6.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	689647	979363.2	0	689647
+2	679670	244840.8	0	679670
+3	216778	61210.2	0	216778
+4	9838	15302.6	0	9838
+5	1820	3825.6	0	1820
+6	1182	956.4	0	1182
+7	1090	239.1	0	1090
+8	908	59.8	0	908
+9	1048	14.9	0	731 317
+10	1849	3.7	1	851 998
+11	1647	0.9	1	763 884
+12	2682	0.2	1	1201 1481
+13	1735	0.1	1	840 895
+14	1568	0.0	1	803 765
+15	1022	0.0	1	565 457
+16	1157	0.0	1	672 485
+17	1159	0.0	1	686 473
+18	1542	0.0	1	855 679 8
+19	1013	0.0	1	578 400 35
+20	1012	0.0	2	562 270 180
+21	1148	0.0	2	558 358 232
+22	1482	0.0	2	718 465 299
+23	1387	0.0	2	591 477 319
+24	1512	0.0	2	746 466 300
+25	1300	0.0	2	679 397 224
+26	941	0.0	2	477 303 161
+27	1039	0.0	2	530 314 193 2
+28	1321	0.0	2	641 395 274 11
+29	1185	0.0	2	530 394 220 41
+30	1530	0.0	3	713 393 257 167
+31	1151	0.0	3	506 351 181 113
+32	1235	0.0	3	555 337 204 139
+33	1139	0.0	3	512 338 159 130
+34	1494	0.0	3	642 384 261 207
+35	1509	0.0	3	606 434 249 220
+36	1605	0.0	3	657 436 276 236
+37	1861	0.0	3	691 520 365 285
+38	2039	0.0	3	791 546 410 292
+39	2102	0.0	3	793 589 406 314
+40	2159	0.0	3	765 646 442 306
+41	3587	0.0	3	1498 929 689 471
+42	1857	0.0	3	606 672 341 238
+43	2903	0.0	3	1620 613 390 280
+44	879	0.0	3	280 297 181 121
+45	724	0.0	3	335 190 114 85
+46	784	0.0	3	386 219 109 70
+47	1292	0.0	3	617 368 192 115
+48	1322	0.0	3	652 357 183 130
+49	1451	0.0	3	685 390 226 150
+50	1417	0.0	3	657 407 214 139
+51	1745	0.0	3	880 460 242 163
+52	1879	0.0	3	867 546 279 187
+53	2035	0.0	3	957 541 341 196
+54	2141	0.0	3	874 626 382 259
+55	2901	0.0	3	1452 796 382 271
+56	1483	0.0	3	721 418 203 141
+57	1196	0.0	3	600 318 168 110
+58	1170	0.0	3	592 329 158 91
+59	1240	0.0	3	668 332 148 92
+60	1373	0.0	3	711 359 175 128
+61	1545	0.0	3	766 390 252 137
+62	1481	0.0	3	710 437 207 127
+63	1693	0.0	3	806 470 249 168
+64	2056	0.0	3	891 595 340 230
+65	3461	0.0	3	1476 932 617 436
+66	3331	0.0	3	1554 871 534 372
+67	2319	0.0	3	1062 681 382 194
+68	2259	0.0	3	1074 628 341 216
+69	2390	0.0	3	1145 654 364 227
+70	2569	0.0	3	1246 713 361 249
+71	2793	0.0	3	1354 789 413 237
+72	3102	0.0	3	1511 892 443 256
+73	3649	0.0	3	1763 1007 511 368
+74	5071	0.0	3	2402 1375 856 438
+75	9392	0.0	3	3538 3948 1198 708
+76	25780	0.0	3	18132 4946 1779 923
+77	13126	0.0	3	8299 3252 1072 503
+78	5334	0.0	3	3101 1436 535 262
+79	2567	0.0	3	1500 659 258 150
+80	1558	0.0	3	836 414 174 134
+81	1209	0.0	3	610 330 158 111
+82	1087	0.0	3	571 267 152 97
+83	982	0.0	3	509 260 121 92
+84	912	0.0	3	438 257 134 83
+85	818	0.0	3	422 211 103 82
+86	796	0.0	3	389 213 100 94
+87	796	0.0	3	391 207 109 89
+88	831	0.0	3	399 219 112 101
+89	800	0.0	3	392 200 132 76
+90	742	0.0	3	333 200 127 82
+91	714	0.0	3	363 166 107 78
+92	747	0.0	3	377 199 89 82
+93	711	0.0	3	319 198 109 85
+94	683	0.0	3	320 180 106 77
+95	741	0.0	3	361 205 97 78
+96	763	0.0	3	363 175 120 105
+97	717	0.0	3	340 190 102 85
+98	687	0.0	3	327 177 107 76
+99	712	0.0	3	329 198 107 78
+100	733	0.0	3	342 211 106 74
+101	643	0.0	3	307 165 92 79
+102	634	0.0	3	303 183 81 67
+103	612	0.0	3	283 172 87 70
+104	646	0.0	3	319 188 78 61
+105	636	0.0	3	298 172 95 71
+106	632	0.0	3	320 159 79 74
+107	610	0.0	3	291 152 100 67
+108	617	0.0	3	281 167 95 74
+109	652	0.0	3	325 164 93 70
+110	555	0.0	3	250 158 86 61
+111	610	0.0	3	291 148 98 73
+112	595	0.0	3	272 150 110 63
+113	566	0.0	3	256 153 79 78
+114	534	0.0	3	269 137 80 48
+115	546	0.0	3	275 148 63 60
+116	544	0.0	3	294 132 66 52
+117	542	0.0	3	270 150 71 51
+118	497	0.0	3	249 128 74 46
+119	496	0.0	3	236 116 79 65
+120	485	0.0	3	234 129 68 54
+121	499	0.0	3	238 145 69 47
+122	429	0.0	3	199 125 58 47
+123	421	0.0	3	215 110 58 38
+124	372	0.0	3	174 97 64 37
+125	372	0.0	3	184 102 60 26
+126	373	0.0	3	191 87 54 41
+127	277	0.0	3	153 69 29 26
+128	262	0.0	3	128 71 40 23
+129	256	0.0	3	146 63 29 18
+130	216	0.0	3	118 57 22 19
+131	153	0.0	3	89 38 14 12
+132	139	0.0	3	67 46 17 9
+133	123	0.0	3	85 23 9 6
+134	98	0.0	3	60 27 7 4
+135	73	0.0	3	43 16 10 4
+136	80	0.0	3	44 20 8 8
+137	56	0.0	3	32 15 6 3
+138	38	0.0	3	25 9 4
+139	26	0.0	3	20 4 1 1
+140	26	0.0	3	13 5 6 2
+141	20	0.0	3	12 5 1 2
+142	12	0.0	3	7 2 1 2
+143	5	0.0	3	1 2 0 2
+144	1	0.0	3	1
+145	2	0.0	3	0 0 0 2
+146	2	0.0	3	1 0 0 1
+148	1	0.0	3	0 0 0 1
+149	2	0.0	3	0 1 0 1
+150	2	0.0	3	0 0 0 2
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_10_S10_R1.fastq
+=============================================
+3917453 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to 'TORN_Pool_10_S10_R2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_10_S10_R2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_10_S10_R2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT' from file TORN_Pool_10_S10_R2.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT TORN_Pool_10_S10_R2.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 64.31 s (16 us/read; 3.65 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               3,917,453
+Reads with adapters:                   989,539 (25.3%)
+Reads written (passing filters):     3,917,453 (100.0%)
+
+Total basepairs processed:   587,617,950 bp
+Quality-trimmed:             182,942,974 bp (31.1%)
+Total written (filtered):    391,188,651 bp (66.6%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 989539 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 26.8%
+  C: 23.5%
+  G: 34.8%
+  T: 13.2%
+  none/other: 1.7%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	440884	979363.2	0	440884
+2	261229	244840.8	0	261229
+3	81780	61210.2	0	81780
+4	5280	15302.6	0	5280
+5	4340	3825.6	0	4340
+6	2079	956.4	0	2079
+7	1011	239.1	0	1011
+8	637	59.8	0	637
+9	630	14.9	0	525 105
+10	1090	3.7	1	591 499
+11	866	0.9	1	403 463
+12	2243	0.2	1	1141 1102
+13	1027	0.1	1	567 460
+14	2260	0.0	1	1440 820
+15	424	0.0	1	246 178
+16	759	0.0	1	466 293
+17	693	0.0	1	441 252
+18	356	0.0	1	190 166
+19	575	0.0	1	390 175 10
+20	648	0.0	2	294 218 136
+21	380	0.0	2	173 113 94
+22	716	0.0	2	355 204 157
+23	779	0.0	2	382 235 162
+24	1049	0.0	2	517 303 229
+25	492	0.0	2	217 154 121
+26	600	0.0	2	320 166 114
+27	610	0.0	2	272 198 135 5
+28	744	0.0	2	379 203 138 24
+29	547	0.0	2	181 192 128 46
+30	1975	0.0	3	666 539 424 346
+31	460	0.0	3	116 161 103 80
+32	956	0.0	3	396 252 163 145
+33	741	0.0	3	277 225 130 109
+34	817	0.0	3	332 210 167 108
+35	1400	0.0	3	440 396 304 260
+36	2789	0.0	3	882 812 637 458
+37	1951	0.0	3	765 551 352 283
+38	1036	0.0	3	407 287 216 126
+39	728	0.0	3	300 222 127 79
+40	1013	0.0	3	346 313 198 156
+41	1432	0.0	3	563 414 248 207
+42	1952	0.0	3	883 496 339 234
+43	734	0.0	3	229 230 166 109
+44	1855	0.0	3	775 537 324 219
+45	2206	0.0	3	1072 579 354 201
+46	924	0.0	3	385 275 155 109
+47	860	0.0	3	359 242 139 120
+48	1558	0.0	3	802 381 231 144
+49	1058	0.0	3	476 285 172 125
+50	1030	0.0	3	431 309 157 133
+51	1525	0.0	3	824 355 213 133
+52	463	0.0	3	159 159 75 70
+53	794	0.0	3	439 177 103 75
+54	668	0.0	3	337 186 94 51
+55	1130	0.0	3	564 285 162 119
+56	1188	0.0	3	512 332 200 144
+57	1491	0.0	3	656 390 265 180
+58	1567	0.0	3	705 424 240 198
+59	1761	0.0	3	783 474 308 196
+60	1795	0.0	3	810 511 290 184
+61	1845	0.0	3	835 487 298 225
+62	2042	0.0	3	900 553 331 258
+63	2382	0.0	3	1044 640 394 304
+64	2875	0.0	3	1307 808 440 320
+65	3841	0.0	3	1715 1059 608 459
+66	5679	0.0	3	2583 1473 1074 549
+67	11090	0.0	3	4093 4756 1464 777
+68	48732	0.0	3	36962 7754 2653 1363
+69	16387	0.0	3	11061 3652 1085 589
+70	5614	0.0	3	3754 1197 411 252
+71	2363	0.0	3	1489 526 224 124
+72	1353	0.0	3	803 316 150 84
+73	1013	0.0	3	598 221 101 93
+74	802	0.0	3	458 176 92 76
+75	727	0.0	3	416 167 86 58
+76	725	0.0	3	415 159 96 55
+77	594	0.0	3	325 141 67 61
+78	618	0.0	3	342 138 77 61
+79	565	0.0	3	311 129 67 58
+80	551	0.0	3	276 134 80 61
+81	540	0.0	3	310 119 65 46
+82	516	0.0	3	260 120 86 50
+83	524	0.0	3	252 129 83 60
+84	447	0.0	3	234 100 60 53
+85	480	0.0	3	255 118 60 47
+86	471	0.0	3	243 122 61 45
+87	481	0.0	3	265 106 67 43
+88	464	0.0	3	252 99 62 51
+89	494	0.0	3	264 96 74 60
+90	532	0.0	3	274 122 84 52
+91	525	0.0	3	267 122 78 58
+92	506	0.0	3	258 115 73 60
+93	489	0.0	3	246 121 75 47
+94	553	0.0	3	273 136 77 67
+95	548	0.0	3	289 123 72 64
+96	588	0.0	3	298 141 80 69
+97	519	0.0	3	285 115 69 50
+98	529	0.0	3	300 112 64 53
+99	556	0.0	3	296 133 68 59
+100	556	0.0	3	293 137 71 55
+101	582	0.0	3	313 133 78 58
+102	575	0.0	3	320 128 78 49
+103	562	0.0	3	324 109 74 55
+104	568	0.0	3	330 119 65 54
+105	590	0.0	3	321 135 75 59
+106	551	0.0	3	284 149 70 48
+107	580	0.0	3	294 142 86 58
+108	561	0.0	3	311 138 61 51
+109	617	0.0	3	367 126 73 51
+110	527	0.0	3	297 104 77 49
+111	543	0.0	3	312 118 62 51
+112	502	0.0	3	280 117 63 42
+113	499	0.0	3	268 125 66 40
+114	563	0.0	3	320 131 72 40
+115	468	0.0	3	283 88 51 46
+116	469	0.0	3	250 121 55 43
+117	533	0.0	3	316 106 64 47
+118	473	0.0	3	258 117 64 34
+119	467	0.0	3	268 95 57 47
+120	472	0.0	3	278 97 48 49
+121	454	0.0	3	270 96 52 36
+122	413	0.0	3	245 79 59 30
+123	462	0.0	3	272 96 59 35
+124	338	0.0	3	185 75 50 28
+125	363	0.0	3	228 76 35 24
+126	351	0.0	3	212 68 44 27
+127	297	0.0	3	181 57 42 17
+128	284	0.0	3	166 59 33 26
+129	218	0.0	3	139 41 23 15
+130	172	0.0	3	109 32 17 14
+131	161	0.0	3	104 32 13 12
+132	114	0.0	3	67 24 13 10
+133	103	0.0	3	59 23 10 11
+134	87	0.0	3	54 17 11 5
+135	72	0.0	3	47 15 4 6
+136	60	0.0	3	47 5 6 2
+137	55	0.0	3	35 9 6 5
+138	34	0.0	3	20 4 3 7
+139	20	0.0	3	13 1 2 4
+140	13	0.0	3	11 2
+141	11	0.0	3	5 2 1 3
+142	9	0.0	3	5 2 0 2
+143	6	0.0	3	1 1 0 4
+144	5	0.0	3	1 0 1 3
+145	3	0.0	3	0 0 1 2
+146	7	0.0	3	1 0 2 4
+147	3	0.0	3	0 1 0 2
+148	4	0.0	3	0 0 2 2
+149	6	0.0	3	0 0 2 4
+150	11	0.0	3	0 1 2 8
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_10_S10_R2.fastq
+=============================================
+3917453 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files TORN_Pool_10_S10_R1_trimmed.fq and TORN_Pool_10_S10_R2_trimmed.fq
+file_1: TORN_Pool_10_S10_R1_trimmed.fq, file_2: TORN_Pool_10_S10_R2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: TORN_Pool_10_S10_R1_trimmed.fq and TORN_Pool_10_S10_R2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to TORN_Pool_10_S10_R1_val_1.fq
+Writing validated paired-end read 2 reads to TORN_Pool_10_S10_R2_val_2.fq
+
+Total number of sequences analysed: 3917453
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 342007 (8.73%)
+
+Deleting both intermediate output files TORN_Pool_10_S10_R1_trimmed.fq and TORN_Pool_10_S10_R2_trimmed.fq
+
+====================================================================================================
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Path to Cutadapt set as: '/Applications/bio-tools/cutadapt-master/cutadapt' (user defined)
+1.18
+Cutadapt seems to be working fine (tested command '/Applications/bio-tools/cutadapt-master/cutadapt --version')
+Writing report to 'TORN_Pool_4_S4_R1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_4_S4_R1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_4_S4_R1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' from file TORN_Pool_4_S4_R1.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC TORN_Pool_4_S4_R1.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 119.07 s (21 us/read; 2.81 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               5,567,859
+Reads with adapters:                 2,539,251 (45.6%)
+Reads written (passing filters):     5,567,859 (100.0%)
+
+Total basepairs processed:   835,178,850 bp
+Quality-trimmed:              41,971,827 bp (5.0%)
+Total written (filtered):    779,161,546 bp (93.3%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC; Type: regular 3'; Length: 34; Trimmed: 2539251 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 33.9%
+  C: 16.5%
+  G: 42.3%
+  T: 7.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	1213268	1391964.8	0	1213268
+2	832566	347991.2	0	832566
+3	308182	86997.8	0	308182
+4	20163	21749.4	0	20163
+5	2834	5437.4	0	2834
+6	1062	1359.3	0	1062
+7	781	339.8	0	781
+8	634	85.0	0	634
+9	1007	21.2	0	554 453
+10	1734	5.3	1	630 1104
+11	1563	1.3	1	603 960
+12	1914	0.3	1	779 1135
+13	1319	0.1	1	607 712
+14	1333	0.0	1	667 666
+15	782	0.0	1	409 373
+16	942	0.0	1	551 391
+17	978	0.0	1	515 463
+18	1306	0.0	1	717 581 8
+19	707	0.0	1	377 299 31
+20	787	0.0	2	395 250 142
+21	861	0.0	2	401 271 189
+22	858	0.0	2	390 272 196
+23	1051	0.0	2	467 356 228
+24	1101	0.0	2	470 387 244
+25	1088	0.0	2	529 336 223
+26	731	0.0	2	345 257 129
+27	775	0.0	2	373 263 138 1
+28	941	0.0	2	442 291 202 6
+29	1006	0.0	2	438 307 217 44
+30	1145	0.0	3	459 333 201 152
+31	864	0.0	3	351 282 146 85
+32	1014	0.0	3	445 302 168 99
+33	805	0.0	3	351 228 134 92
+34	1006	0.0	3	428 256 192 130
+35	1206	0.0	3	436 362 238 170
+36	1393	0.0	3	513 428 268 184
+37	1397	0.0	3	479 456 260 202
+38	1814	0.0	3	631 519 354 310
+39	1347	0.0	3	438 407 294 208
+40	1535	0.0	3	528 446 319 242
+41	1736	0.0	3	666 462 384 224
+42	1881	0.0	3	623 621 397 240
+43	3066	0.0	3	1440 807 464 355
+44	874	0.0	3	238 306 200 130
+45	618	0.0	3	273 165 98 82
+46	587	0.0	3	253 175 89 70
+47	1025	0.0	3	453 288 148 136
+48	1015	0.0	3	413 300 191 111
+49	1131	0.0	3	479 334 171 147
+50	1149	0.0	3	515 321 203 110
+51	1350	0.0	3	615 384 211 140
+52	1349	0.0	3	590 391 226 142
+53	1475	0.0	3	600 441 264 170
+54	1785	0.0	3	720 550 311 204
+55	2000	0.0	3	1013 514 290 183
+56	984	0.0	3	461 305 122 96
+57	957	0.0	3	452 272 143 90
+58	906	0.0	3	420 272 143 71
+59	955	0.0	3	464 279 138 74
+60	1073	0.0	3	506 314 167 86
+61	1238	0.0	3	555 334 208 141
+62	1082	0.0	3	472 343 158 109
+63	1284	0.0	3	630 342 194 118
+64	1643	0.0	3	659 498 284 202
+65	2776	0.0	3	1097 789 527 363
+66	2586	0.0	3	1133 733 422 298
+67	1739	0.0	3	784 471 293 191
+68	1642	0.0	3	748 454 282 158
+69	1671	0.0	3	770 478 268 155
+70	1902	0.0	3	878 532 303 189
+71	2013	0.0	3	894 591 309 219
+72	2311	0.0	3	1067 664 345 235
+73	2792	0.0	3	1260 819 414 299
+74	3698	0.0	3	1675 1028 623 372
+75	6395	0.0	3	2266 2752 895 482
+76	17720	0.0	3	11769 3730 1486 735
+77	9568	0.0	3	5654 2630 884 400
+78	4059	0.0	3	2223 1138 459 239
+79	2124	0.0	3	1098 595 290 141
+80	1277	0.0	3	656 370 139 112
+81	1008	0.0	3	488 273 162 85
+82	926	0.0	3	447 258 125 96
+83	839	0.0	3	353 260 133 93
+84	715	0.0	3	341 203 96 75
+85	788	0.0	3	364 213 124 87
+86	744	0.0	3	319 215 125 85
+87	709	0.0	3	324 196 107 82
+88	768	0.0	3	327 214 135 92
+89	707	0.0	3	336 188 109 74
+90	691	0.0	3	302 188 127 74
+91	655	0.0	3	275 195 111 74
+92	652	0.0	3	270 185 112 85
+93	670	0.0	3	294 177 121 78
+94	614	0.0	3	269 178 100 67
+95	639	0.0	3	285 178 95 81
+96	609	0.0	3	266 173 92 78
+97	608	0.0	3	260 194 99 55
+98	608	0.0	3	240 181 104 83
+99	580	0.0	3	239 167 102 72
+100	635	0.0	3	288 183 97 67
+101	561	0.0	3	254 129 104 74
+102	582	0.0	3	272 160 75 75
+103	584	0.0	3	222 173 116 73
+104	560	0.0	3	241 168 87 64
+105	552	0.0	3	226 164 87 75
+106	532	0.0	3	215 148 101 68
+107	527	0.0	3	229 133 100 65
+108	547	0.0	3	236 158 82 71
+109	540	0.0	3	261 129 84 66
+110	539	0.0	3	241 147 80 71
+111	517	0.0	3	223 157 73 64
+112	471	0.0	3	220 134 61 56
+113	502	0.0	3	227 135 74 66
+114	491	0.0	3	223 126 84 58
+115	454	0.0	3	213 131 74 36
+116	456	0.0	3	196 142 75 43
+117	449	0.0	3	192 123 76 58
+118	440	0.0	3	205 129 62 44
+119	396	0.0	3	183 125 48 40
+120	442	0.0	3	202 128 70 42
+121	398	0.0	3	184 98 64 52
+122	370	0.0	3	161 99 65 45
+123	344	0.0	3	145 102 60 37
+124	322	0.0	3	142 94 54 32
+125	327	0.0	3	149 99 43 36
+126	274	0.0	3	146 60 51 17
+127	247	0.0	3	123 74 34 16
+128	224	0.0	3	108 63 34 19
+129	210	0.0	3	112 54 22 22
+130	185	0.0	3	106 50 17 12
+131	140	0.0	3	76 34 15 15
+132	130	0.0	3	71 33 20 6
+133	101	0.0	3	67 19 5 10
+134	89	0.0	3	49 26 9 5
+135	91	0.0	3	52 21 10 8
+136	79	0.0	3	47 14 11 7
+137	52	0.0	3	31 14 4 3
+138	38	0.0	3	27 7 2 2
+139	26	0.0	3	15 9 1 1
+140	20	0.0	3	8 9 3
+141	13	0.0	3	8 5
+142	7	0.0	3	6 0 1
+143	4	0.0	3	1 2 1
+144	3	0.0	3	0 1 0 2
+145	2	0.0	3	1 0 0 1
+146	2	0.0	3	0 0 1 1
+148	7	0.0	3	0 1 2 4
+149	1	0.0	3	1
+150	2	0.0	3	0 0 0 2
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_4_S4_R1.fastq
+=============================================
+5567859 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to 'TORN_Pool_4_S4_R2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_4_S4_R2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_4_S4_R2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT' from file TORN_Pool_4_S4_R2.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT TORN_Pool_4_S4_R2.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 99.83 s (18 us/read; 3.35 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               5,567,859
+Reads with adapters:                 1,521,548 (27.3%)
+Reads written (passing filters):     5,567,859 (100.0%)
+
+Total basepairs processed:   835,178,850 bp
+Quality-trimmed:             194,822,342 bp (23.3%)
+Total written (filtered):    628,154,211 bp (75.2%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 1521548 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 30.1%
+  C: 24.3%
+  G: 31.3%
+  T: 12.5%
+  none/other: 1.9%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	796232	1391964.8	0	796232
+2	414024	347991.2	0	414024
+3	133430	86997.8	0	133430
+4	9678	21749.4	0	9678
+5	4832	5437.4	0	4832
+6	1832	1359.3	0	1832
+7	839	339.8	0	839
+8	544	85.0	0	544
+9	613	21.2	0	446 167
+10	1051	5.3	1	475 576
+11	933	1.3	1	401 532
+12	2252	0.3	1	1080 1172
+13	968	0.1	1	502 466
+14	1795	0.0	1	1102 693
+15	380	0.0	1	253 127
+16	605	0.0	1	391 214
+17	596	0.0	1	393 203
+18	298	0.0	1	161 135 2
+19	568	0.0	1	376 182 10
+20	584	0.0	2	270 182 132
+21	402	0.0	2	182 131 89
+22	562	0.0	2	257 175 130
+23	715	0.0	2	347 216 152
+24	859	0.0	2	443 250 166
+25	419	0.0	2	177 145 97
+26	598	0.0	2	334 162 102
+27	524	0.0	2	256 172 94 2
+28	614	0.0	2	304 168 124 18
+29	538	0.0	2	169 188 134 47
+30	1783	0.0	3	626 430 361 366
+31	433	0.0	3	135 121 81 96
+32	826	0.0	3	344 207 157 118
+33	647	0.0	3	232 178 125 112
+34	732	0.0	3	319 178 134 101
+35	1266	0.0	3	380 371 283 232
+36	2493	0.0	3	742 743 584 424
+37	1824	0.0	3	731 515 344 234
+38	842	0.0	3	346 260 147 89
+39	692	0.0	3	300 167 125 100
+40	833	0.0	3	317 223 161 132
+41	1265	0.0	3	514 342 248 161
+42	1615	0.0	3	777 410 261 167
+43	657	0.0	3	198 231 138 90
+44	1589	0.0	3	686 465 268 170
+45	1887	0.0	3	923 489 309 166
+46	890	0.0	3	391 256 144 99
+47	658	0.0	3	266 185 121 86
+48	1437	0.0	3	710 380 222 125
+49	858	0.0	3	395 239 123 101
+50	761	0.0	3	342 190 125 104
+51	1149	0.0	3	648 240 153 108
+52	372	0.0	3	125 117 83 47
+53	767	0.0	3	441 178 92 56
+54	642	0.0	3	323 166 87 66
+55	929	0.0	3	431 261 132 105
+56	998	0.0	3	463 257 172 106
+57	1326	0.0	3	594 354 231 147
+58	1487	0.0	3	654 374 247 212
+59	1669	0.0	3	723 474 278 194
+60	1548	0.0	3	707 387 267 187
+61	1596	0.0	3	724 418 256 198
+62	1851	0.0	3	808 483 342 218
+63	2087	0.0	3	979 560 317 231
+64	2304	0.0	3	1015 662 360 267
+65	3301	0.0	3	1473 931 516 381
+66	4858	0.0	3	2252 1291 837 478
+67	8778	0.0	3	3281 3742 1148 607
+68	37728	0.0	3	28214 6267 2156 1091
+69	12486	0.0	3	8335 2822 899 430
+70	4385	0.0	3	2961 901 335 188
+71	1771	0.0	3	1096 388 180 107
+72	1069	0.0	3	660 219 120 70
+73	839	0.0	3	462 203 98 76
+74	701	0.0	3	415 171 60 55
+75	636	0.0	3	340 148 92 56
+76	609	0.0	3	346 124 83 56
+77	578	0.0	3	311 140 72 55
+78	557	0.0	3	298 128 67 64
+79	517	0.0	3	266 117 74 60
+80	509	0.0	3	272 122 59 56
+81	482	0.0	3	257 100 69 56
+82	472	0.0	3	253 109 60 50
+83	495	0.0	3	240 126 66 63
+84	456	0.0	3	225 105 66 60
+85	463	0.0	3	237 102 72 52
+86	495	0.0	3	247 107 81 60
+87	468	0.0	3	242 96 66 64
+88	434	0.0	3	228 94 47 65
+89	490	0.0	3	244 124 62 60
+90	491	0.0	3	249 105 81 56
+91	465	0.0	3	228 116 72 49
+92	467	0.0	3	239 97 73 58
+93	507	0.0	3	252 114 83 58
+94	492	0.0	3	251 124 68 49
+95	441	0.0	3	204 108 67 62
+96	488	0.0	3	253 126 71 38
+97	477	0.0	3	253 107 69 48
+98	432	0.0	3	213 112 65 42
+99	500	0.0	3	253 123 63 61
+100	536	0.0	3	276 119 79 62
+101	487	0.0	3	243 132 57 55
+102	544	0.0	3	266 127 93 58
+103	504	0.0	3	253 125 73 53
+104	488	0.0	3	255 114 65 54
+105	504	0.0	3	258 113 73 60
+106	487	0.0	3	262 113 66 46
+107	487	0.0	3	255 109 65 58
+108	464	0.0	3	261 93 52 58
+109	433	0.0	3	228 94 61 50
+110	459	0.0	3	253 106 62 38
+111	462	0.0	3	250 106 61 45
+112	445	0.0	3	228 114 63 40
+113	448	0.0	3	253 97 53 45
+114	411	0.0	3	213 96 57 45
+115	443	0.0	3	238 95 81 29
+116	433	0.0	3	235 89 62 47
+117	410	0.0	3	227 82 59 42
+118	420	0.0	3	223 100 49 48
+119	383	0.0	3	191 84 60 48
+120	386	0.0	3	209 80 58 39
+121	400	0.0	3	223 88 54 35
+122	388	0.0	3	217 76 52 43
+123	337	0.0	3	199 66 38 34
+124	347	0.0	3	189 75 43 40
+125	289	0.0	3	165 51 46 27
+126	264	0.0	3	165 58 28 13
+127	265	0.0	3	137 63 44 21
+128	181	0.0	3	102 44 21 14
+129	179	0.0	3	104 39 14 22
+130	170	0.0	3	101 40 17 12
+131	107	0.0	3	56 28 13 10
+132	122	0.0	3	73 24 10 15
+133	106	0.0	3	68 23 10 5
+134	83	0.0	3	48 17 9 9
+135	72	0.0	3	47 9 11 5
+136	51	0.0	3	33 6 8 4
+137	37	0.0	3	18 10 6 3
+138	38	0.0	3	25 8 1 4
+139	40	0.0	3	22 9 5 4
+140	17	0.0	3	11 4 0 2
+141	16	0.0	3	7 0 1 8
+142	16	0.0	3	5 4 5 2
+143	9	0.0	3	4 0 2 3
+144	7	0.0	3	2 0 3 2
+145	7	0.0	3	0 2 2 3
+146	8	0.0	3	1 0 0 7
+147	5	0.0	3	0 1 0 4
+148	7	0.0	3	0 0 1 6
+149	8	0.0	3	0 0 0 8
+150	3	0.0	3	0 0 0 3
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_4_S4_R2.fastq
+=============================================
+5567859 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files TORN_Pool_4_S4_R1_trimmed.fq and TORN_Pool_4_S4_R2_trimmed.fq
+file_1: TORN_Pool_4_S4_R1_trimmed.fq, file_2: TORN_Pool_4_S4_R2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: TORN_Pool_4_S4_R1_trimmed.fq and TORN_Pool_4_S4_R2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to TORN_Pool_4_S4_R1_val_1.fq
+Writing validated paired-end read 2 reads to TORN_Pool_4_S4_R2_val_2.fq
+
+Total number of sequences analysed: 5567859
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 590564 (10.61%)
+
+Deleting both intermediate output files TORN_Pool_4_S4_R1_trimmed.fq and TORN_Pool_4_S4_R2_trimmed.fq
+
+====================================================================================================
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Path to Cutadapt set as: '/Applications/bio-tools/cutadapt-master/cutadapt' (user defined)
+1.18
+Cutadapt seems to be working fine (tested command '/Applications/bio-tools/cutadapt-master/cutadapt --version')
+Writing report to 'TORN_Pool_5_S5_R1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_5_S5_R1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_5_S5_R1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' from file TORN_Pool_5_S5_R1.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC TORN_Pool_5_S5_R1.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 39.59 s (19 us/read; 3.21 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,118,129
+Reads with adapters:                   892,348 (42.1%)
+Reads written (passing filters):     2,118,129 (100.0%)
+
+Total basepairs processed:   317,719,350 bp
+Quality-trimmed:              23,542,858 bp (7.4%)
+Total written (filtered):    287,504,688 bp (90.5%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC; Type: regular 3'; Length: 34; Trimmed: 892348 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 31.1%
+  C: 16.7%
+  G: 42.4%
+  T: 9.7%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	407679	529532.2	0	407679
+2	282097	132383.1	0	282097
+3	108432	33095.8	0	108432
+4	5856	8273.9	0	5856
+5	1268	2068.5	0	1268
+6	604	517.1	0	604
+7	481	129.3	0	481
+8	400	32.3	0	400
+9	536	8.1	0	336 200
+10	854	2.0	1	397 457
+11	730	0.5	1	324 406
+12	1177	0.1	1	509 668
+13	753	0.0	1	415 338
+14	765	0.0	1	418 347
+15	470	0.0	1	261 209
+16	561	0.0	1	297 264
+17	554	0.0	1	303 251
+18	705	0.0	1	421 278 6
+19	386	0.0	1	209 166 11
+20	429	0.0	2	243 121 65
+21	451	0.0	2	214 150 87
+22	486	0.0	2	241 142 103
+23	597	0.0	2	276 212 109
+24	645	0.0	2	302 211 132
+25	607	0.0	2	304 184 119
+26	422	0.0	2	212 141 69
+27	492	0.0	2	254 146 84 8
+28	559	0.0	2	246 168 136 9
+29	516	0.0	2	212 165 109 30
+30	600	0.0	3	223 174 130 73
+31	526	0.0	3	224 159 82 61
+32	509	0.0	3	224 142 89 54
+33	490	0.0	3	211 144 73 62
+34	583	0.0	3	218 169 123 73
+35	643	0.0	3	218 193 125 107
+36	758	0.0	3	293 218 157 90
+37	846	0.0	3	300 261 165 120
+38	980	0.0	3	362 276 214 128
+39	750	0.0	3	236 233 172 109
+40	1066	0.0	3	397 338 201 130
+41	1343	0.0	3	487 356 264 236
+42	784	0.0	3	247 278 134 125
+43	1030	0.0	3	486 265 166 113
+44	332	0.0	3	91 119 77 45
+45	240	0.0	3	96 58 44 42
+46	308	0.0	3	123 93 49 43
+47	677	0.0	3	276 192 124 85
+48	549	0.0	3	236 161 93 59
+49	614	0.0	3	274 160 104 76
+50	619	0.0	3	240 187 115 77
+51	711	0.0	3	323 203 104 81
+52	680	0.0	3	299 186 110 85
+53	797	0.0	3	319 248 135 95
+54	1010	0.0	3	403 302 189 116
+55	1107	0.0	3	505 304 186 112
+56	526	0.0	3	218 162 91 55
+57	538	0.0	3	243 166 73 56
+58	504	0.0	3	225 146 85 48
+59	511	0.0	3	228 156 85 42
+60	694	0.0	3	294 223 104 73
+61	715	0.0	3	319 193 120 83
+62	619	0.0	3	272 178 110 59
+63	774	0.0	3	309 244 133 88
+64	944	0.0	3	348 304 169 123
+65	1903	0.0	3	733 538 368 264
+66	1620	0.0	3	675 471 266 208
+67	1064	0.0	3	426 344 186 108
+68	945	0.0	3	412 272 150 111
+69	1002	0.0	3	430 320 158 94
+70	1135	0.0	3	494 367 156 118
+71	1177	0.0	3	509 363 193 112
+72	1270	0.0	3	573 378 215 104
+73	1484	0.0	3	629 473 241 141
+74	2003	0.0	3	852 595 383 173
+75	3558	0.0	3	1291 1437 583 247
+76	9335	0.0	3	5884 2207 882 362
+77	4731	0.0	3	2574 1422 502 233
+78	1910	0.0	3	1004 586 230 90
+79	978	0.0	3	479 284 146 69
+80	583	0.0	3	270 162 101 50
+81	531	0.0	3	243 168 70 50
+82	406	0.0	3	177 119 62 48
+83	396	0.0	3	163 128 63 42
+84	399	0.0	3	191 116 57 35
+85	367	0.0	3	152 114 63 38
+86	362	0.0	3	147 113 54 48
+87	372	0.0	3	143 124 61 44
+88	343	0.0	3	164 93 50 36
+89	361	0.0	3	135 106 80 40
+90	357	0.0	3	132 109 65 51
+91	326	0.0	3	129 99 62 36
+92	364	0.0	3	150 109 61 44
+93	331	0.0	3	134 102 54 41
+94	320	0.0	3	120 94 68 38
+95	281	0.0	3	107 78 52 44
+96	315	0.0	3	113 89 53 60
+97	312	0.0	3	113 91 58 50
+98	325	0.0	3	123 95 75 32
+99	322	0.0	3	148 84 50 40
+100	321	0.0	3	122 105 58 36
+101	324	0.0	3	145 86 49 44
+102	281	0.0	3	115 76 55 35
+103	269	0.0	3	108 82 47 32
+104	291	0.0	3	125 72 56 38
+105	285	0.0	3	109 84 59 33
+106	245	0.0	3	94 73 44 34
+107	257	0.0	3	119 70 35 33
+108	280	0.0	3	119 77 51 33
+109	252	0.0	3	106 68 46 32
+110	287	0.0	3	114 83 62 28
+111	259	0.0	3	110 73 38 38
+112	262	0.0	3	117 69 44 32
+113	220	0.0	3	99 71 31 19
+114	270	0.0	3	117 72 46 35
+115	251	0.0	3	104 69 40 38
+116	205	0.0	3	90 59 31 25
+117	210	0.0	3	100 62 31 17
+118	215	0.0	3	85 75 31 24
+119	172	0.0	3	71 55 26 20
+120	169	0.0	3	74 50 28 17
+121	195	0.0	3	85 62 25 23
+122	165	0.0	3	62 49 29 25
+123	184	0.0	3	72 60 33 19
+124	158	0.0	3	66 51 26 15
+125	131	0.0	3	68 40 16 7
+126	138	0.0	3	55 43 26 14
+127	109	0.0	3	45 39 15 10
+128	106	0.0	3	49 34 15 8
+129	107	0.0	3	50 31 15 11
+130	71	0.0	3	39 23 4 5
+131	70	0.0	3	35 22 10 3
+132	37	0.0	3	22 11 3 1
+133	43	0.0	3	22 13 4 4
+134	32	0.0	3	18 9 4 1
+135	31	0.0	3	19 8 4
+136	11	0.0	3	6 3 2
+137	21	0.0	3	12 7 2
+138	12	0.0	3	9 1 1 1
+139	8	0.0	3	6 1 0 1
+140	7	0.0	3	3 4
+141	4	0.0	3	2 1 1
+143	1	0.0	3	0 1
+144	1	0.0	3	1
+145	1	0.0	3	1
+148	1	0.0	3	0 0 1
+150	2	0.0	3	0 0 0 2
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_5_S5_R1.fastq
+=============================================
+2118129 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to 'TORN_Pool_5_S5_R2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_5_S5_R2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_5_S5_R2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT' from file TORN_Pool_5_S5_R2.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT TORN_Pool_5_S5_R2.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 34.06 s (16 us/read; 3.73 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,118,129
+Reads with adapters:                   715,732 (33.8%)
+Reads written (passing filters):     2,118,129 (100.0%)
+
+Total basepairs processed:   317,719,350 bp
+Quality-trimmed:              78,518,408 bp (24.7%)
+Total written (filtered):    232,401,121 bp (73.1%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 715732 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 30.6%
+  C: 20.4%
+  G: 33.4%
+  T: 14.3%
+  none/other: 1.3%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	346582	529532.2	0	346582
+2	194780	132383.1	0	194780
+3	70053	33095.8	0	70053
+4	4204	8273.9	0	4204
+5	2565	2068.5	0	2565
+6	1137	517.1	0	1137
+7	627	129.3	0	627
+8	422	32.3	0	422
+9	376	8.1	0	291 85
+10	749	2.0	1	384 365
+11	608	0.5	1	258 350
+12	1612	0.1	1	793 819
+13	688	0.0	1	363 325
+14	1521	0.0	1	914 607
+15	244	0.0	1	149 95
+16	329	0.0	1	213 116
+17	348	0.0	1	223 125
+18	185	0.0	1	106 77 2
+19	311	0.0	1	204 100 7
+20	353	0.0	2	168 111 74
+21	252	0.0	2	116 85 51
+22	376	0.0	2	177 124 75
+23	496	0.0	2	232 155 109
+24	568	0.0	2	286 184 98
+25	318	0.0	2	150 102 66
+26	358	0.0	2	172 114 72
+27	326	0.0	2	156 111 59
+28	433	0.0	2	195 122 105 11
+29	355	0.0	2	120 126 86 23
+30	1251	0.0	3	406 345 282 218
+31	302	0.0	3	70 112 69 51
+32	547	0.0	3	205 135 123 84
+33	422	0.0	3	173 109 80 60
+34	520	0.0	3	204 113 102 101
+35	874	0.0	3	222 256 212 184
+36	1910	0.0	3	538 601 450 321
+37	1267	0.0	3	466 382 242 177
+38	603	0.0	3	251 178 105 69
+39	421	0.0	3	180 111 71 59
+40	565	0.0	3	203 156 105 101
+41	847	0.0	3	336 233 165 113
+42	1146	0.0	3	532 280 187 147
+43	406	0.0	3	119 137 88 62
+44	1081	0.0	3	449 333 176 123
+45	1322	0.0	3	619 362 215 126
+46	625	0.0	3	275 181 99 70
+47	458	0.0	3	183 133 89 53
+48	1053	0.0	3	576 241 138 98
+49	556	0.0	3	260 158 94 44
+50	454	0.0	3	191 131 83 49
+51	814	0.0	3	438 188 103 85
+52	247	0.0	3	89 79 46 33
+53	424	0.0	3	239 107 50 28
+54	391	0.0	3	200 120 49 22
+55	550	0.0	3	262 152 81 55
+56	668	0.0	3	309 177 99 83
+57	814	0.0	3	350 227 138 99
+58	864	0.0	3	389 222 154 99
+59	996	0.0	3	454 264 153 125
+60	984	0.0	3	463 261 152 108
+61	938	0.0	3	449 243 135 111
+62	1180	0.0	3	556 311 187 126
+63	1262	0.0	3	594 347 174 147
+64	1486	0.0	3	689 397 242 158
+65	1981	0.0	3	970 509 284 218
+66	2868	0.0	3	1353 751 496 268
+67	5199	0.0	3	2027 2211 660 301
+68	20704	0.0	3	15951 3188 1009 556
+69	6726	0.0	3	4642 1448 440 196
+70	2348	0.0	3	1554 508 189 97
+71	1009	0.0	3	667 199 91 52
+72	565	0.0	3	335 124 68 38
+73	476	0.0	3	267 109 51 49
+74	422	0.0	3	233 99 50 40
+75	359	0.0	3	202 81 37 39
+76	340	0.0	3	166 94 46 34
+77	331	0.0	3	186 76 43 26
+78	332	0.0	3	199 68 44 21
+79	298	0.0	3	169 70 33 26
+80	294	0.0	3	150 68 46 30
+81	272	0.0	3	134 74 32 32
+82	270	0.0	3	129 64 45 32
+83	284	0.0	3	144 69 47 24
+84	247	0.0	3	135 49 40 23
+85	289	0.0	3	131 68 54 36
+86	270	0.0	3	138 68 33 31
+87	262	0.0	3	137 61 42 22
+88	252	0.0	3	116 62 44 30
+89	315	0.0	3	158 86 39 32
+90	276	0.0	3	143 70 36 27
+91	270	0.0	3	141 67 24 38
+92	298	0.0	3	156 69 45 28
+93	279	0.0	3	147 65 45 22
+94	287	0.0	3	147 77 38 25
+95	230	0.0	3	127 48 37 18
+96	270	0.0	3	131 67 35 37
+97	267	0.0	3	140 62 34 31
+98	280	0.0	3	135 73 41 31
+99	271	0.0	3	149 62 36 24
+100	297	0.0	3	165 66 40 26
+101	293	0.0	3	162 67 42 22
+102	279	0.0	3	157 66 32 24
+103	303	0.0	3	161 70 39 33
+104	279	0.0	3	148 57 47 27
+105	274	0.0	3	148 72 26 28
+106	258	0.0	3	139 62 32 25
+107	302	0.0	3	167 70 29 36
+108	278	0.0	3	144 59 54 21
+109	265	0.0	3	143 59 31 32
+110	273	0.0	3	153 63 39 18
+111	252	0.0	3	127 69 33 23
+112	217	0.0	3	106 49 37 25
+113	231	0.0	3	113 58 32 28
+114	213	0.0	3	118 44 27 24
+115	245	0.0	3	132 54 34 25
+116	226	0.0	3	118 71 25 12
+117	201	0.0	3	107 44 34 16
+118	220	0.0	3	116 57 23 24
+119	176	0.0	3	95 34 30 17
+120	190	0.0	3	98 56 20 16
+121	188	0.0	3	109 35 23 21
+122	175	0.0	3	104 33 23 15
+123	167	0.0	3	97 38 17 15
+124	152	0.0	3	92 29 21 10
+125	139	0.0	3	70 33 19 17
+126	134	0.0	3	77 25 17 15
+127	104	0.0	3	59 22 13 10
+128	91	0.0	3	58 17 9 7
+129	77	0.0	3	53 13 4 7
+130	70	0.0	3	36 20 9 5
+131	57	0.0	3	39 11 6 1
+132	41	0.0	3	30 5 5 1
+133	39	0.0	3	25 8 2 4
+134	34	0.0	3	23 5 4 2
+135	29	0.0	3	14 8 4 3
+136	19	0.0	3	13 3 1 2
+137	18	0.0	3	12 2 1 3
+138	14	0.0	3	9 2 3
+139	9	0.0	3	5 2 1 1
+140	4	0.0	3	1 0 1 2
+141	2	0.0	3	1 0 0 1
+142	6	0.0	3	3 0 1 2
+143	3	0.0	3	0 1 1 1
+144	3	0.0	3	1 0 0 2
+145	1	0.0	3	0 0 0 1
+146	4	0.0	3	0 0 1 3
+147	3	0.0	3	0 0 0 3
+148	6	0.0	3	0 0 1 5
+149	3	0.0	3	0 1 0 2
+150	3	0.0	3	0 0 0 3
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_5_S5_R2.fastq
+=============================================
+2118129 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files TORN_Pool_5_S5_R1_trimmed.fq and TORN_Pool_5_S5_R2_trimmed.fq
+file_1: TORN_Pool_5_S5_R1_trimmed.fq, file_2: TORN_Pool_5_S5_R2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: TORN_Pool_5_S5_R1_trimmed.fq and TORN_Pool_5_S5_R2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to TORN_Pool_5_S5_R1_val_1.fq
+Writing validated paired-end read 2 reads to TORN_Pool_5_S5_R2_val_2.fq
+
+Total number of sequences analysed: 2118129
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 171016 (8.07%)
+
+Deleting both intermediate output files TORN_Pool_5_S5_R1_trimmed.fq and TORN_Pool_5_S5_R2_trimmed.fq
+
+====================================================================================================
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Path to Cutadapt set as: '/Applications/bio-tools/cutadapt-master/cutadapt' (user defined)
+1.18
+Cutadapt seems to be working fine (tested command '/Applications/bio-tools/cutadapt-master/cutadapt --version')
+Writing report to 'TORN_Pool_6_S6_R1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_6_S6_R1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_6_S6_R1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' from file TORN_Pool_6_S6_R1.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC TORN_Pool_6_S6_R1.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 131.24 s (20 us/read; 2.98 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               6,514,426
+Reads with adapters:                 3,042,824 (46.7%)
+Reads written (passing filters):     6,514,426 (100.0%)
+
+Total basepairs processed:   977,163,900 bp
+Quality-trimmed:              64,496,045 bp (6.6%)
+Total written (filtered):    891,841,301 bp (91.3%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC; Type: regular 3'; Length: 34; Trimmed: 3042824 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 32.4%
+  C: 15.5%
+  G: 45.1%
+  T: 7.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	1370313	1628606.5	0	1370313
+2	1017042	407151.6	0	1017042
+3	376514	101787.9	0	376514
+4	22830	25447.0	0	22830
+5	3250	6361.7	0	3250
+6	1467	1590.4	0	1467
+7	1064	397.6	0	1064
+8	1008	99.4	0	1008
+9	1418	24.9	0	736 682
+10	2486	6.2	1	884 1602
+11	2160	1.6	1	764 1396
+12	2952	0.4	1	1223 1729
+13	2148	0.1	1	962 1186
+14	2112	0.0	1	1019 1093
+15	1246	0.0	1	635 611
+16	1292	0.0	1	678 614
+17	1439	0.0	1	700 739
+18	2182	0.0	1	1129 1041 12
+19	1070	0.0	1	561 444 65
+20	1057	0.0	2	523 355 179
+21	1155	0.0	2	531 371 253
+22	1267	0.0	2	550 429 288
+23	1671	0.0	2	647 600 424
+24	1690	0.0	2	717 581 392
+25	1761	0.0	2	813 584 364
+26	1051	0.0	2	452 375 224
+27	1133	0.0	2	544 357 227 5
+28	1573	0.0	2	633 539 385 16
+29	1438	0.0	2	594 460 307 77
+30	1979	0.0	3	793 561 364 261
+31	1249	0.0	3	442 428 219 160
+32	1540	0.0	3	664 403 272 201
+33	1157	0.0	3	393 378 237 149
+34	1773	0.0	3	679 487 352 255
+35	1620	0.0	3	560 512 329 219
+36	1905	0.0	3	721 568 361 255
+37	2234	0.0	3	804 640 451 339
+38	2777	0.0	3	1033 712 555 477
+39	3037	0.0	3	1028 961 604 444
+40	3907	0.0	3	1670 1065 703 469
+41	1555	0.0	3	541 485 342 187
+42	1327	0.0	3	504 460 206 157
+43	1698	0.0	3	904 407 239 148
+44	666	0.0	3	241 203 121 101
+45	755	0.0	3	353 210 110 82
+46	890	0.0	3	416 249 135 90
+47	1444	0.0	3	613 396 255 180
+48	1383	0.0	3	593 402 239 149
+49	1593	0.0	3	685 441 258 209
+50	1503	0.0	3	638 464 252 149
+51	1898	0.0	3	892 511 268 227
+52	1954	0.0	3	775 599 337 243
+53	2026	0.0	3	881 568 345 232
+54	2421	0.0	3	935 731 428 327
+55	2732	0.0	3	1310 759 387 276
+56	1582	0.0	3	703 498 244 137
+57	1368	0.0	3	625 404 211 128
+58	1346	0.0	3	617 385 200 144
+59	1467	0.0	3	707 394 215 151
+60	1576	0.0	3	719 446 240 171
+61	1825	0.0	3	840 490 291 204
+62	1600	0.0	3	657 495 282 166
+63	1874	0.0	3	847 538 292 197
+64	2523	0.0	3	981 716 482 344
+65	4968	0.0	3	1997 1337 907 727
+66	4245	0.0	3	1861 1125 750 509
+67	2641	0.0	3	1118 814 412 297
+68	2557	0.0	3	1090 760 441 266
+69	2681	0.0	3	1258 781 380 262
+70	2912	0.0	3	1305 849 448 310
+71	3195	0.0	3	1443 918 516 318
+72	3679	0.0	3	1695 1102 526 356
+73	4543	0.0	3	2012 1313 720 498
+74	6114	0.0	3	2634 1809 1060 611
+75	11369	0.0	3	4017 5002 1544 806
+76	30681	0.0	3	20467 6562 2479 1173
+77	16407	0.0	3	9839 4371 1489 708
+78	6462	0.0	3	3607 1784 753 318
+79	3331	0.0	3	1768 912 430 221
+80	1946	0.0	3	952 552 267 175
+81	1736	0.0	3	864 472 239 161
+82	1425	0.0	3	702 400 180 143
+83	1287	0.0	3	608 354 185 140
+84	1240	0.0	3	584 332 187 137
+85	1116	0.0	3	507 323 168 118
+86	1131	0.0	3	502 318 177 134
+87	1093	0.0	3	491 316 153 133
+88	1006	0.0	3	461 265 155 125
+89	994	0.0	3	467 234 161 132
+90	993	0.0	3	404 299 173 117
+91	989	0.0	3	446 274 151 118
+92	1006	0.0	3	416 298 153 139
+93	984	0.0	3	407 272 172 133
+94	962	0.0	3	425 271 146 120
+95	947	0.0	3	413 269 157 108
+96	1025	0.0	3	451 279 172 123
+97	947	0.0	3	393 276 148 130
+98	950	0.0	3	394 269 173 114
+99	977	0.0	3	414 311 150 102
+100	969	0.0	3	416 286 156 111
+101	947	0.0	3	385 277 169 116
+102	939	0.0	3	410 266 161 102
+103	907	0.0	3	384 253 156 114
+104	856	0.0	3	375 235 143 103
+105	907	0.0	3	411 258 147 91
+106	878	0.0	3	374 249 141 114
+107	911	0.0	3	392 243 147 129
+108	863	0.0	3	389 220 151 103
+109	910	0.0	3	426 227 130 127
+110	892	0.0	3	403 228 141 120
+111	899	0.0	3	394 222 168 115
+112	855	0.0	3	378 231 139 107
+113	796	0.0	3	361 245 106 84
+114	795	0.0	3	360 195 142 98
+115	779	0.0	3	360 221 122 76
+116	773	0.0	3	354 199 128 92
+117	714	0.0	3	332 186 112 84
+118	727	0.0	3	367 177 95 88
+119	675	0.0	3	311 203 96 65
+120	723	0.0	3	325 189 120 89
+121	697	0.0	3	353 174 96 74
+122	619	0.0	3	312 159 94 54
+123	603	0.0	3	266 158 114 65
+124	591	0.0	3	281 142 94 74
+125	550	0.0	3	255 143 85 67
+126	517	0.0	3	245 154 61 57
+127	435	0.0	3	219 124 53 39
+128	442	0.0	3	231 112 47 52
+129	391	0.0	3	188 118 53 32
+130	313	0.0	3	170 82 38 23
+131	250	0.0	3	129 73 32 16
+132	256	0.0	3	159 65 23 9
+133	179	0.0	3	107 46 16 10
+134	159	0.0	3	95 38 17 9
+135	150	0.0	3	88 42 16 4
+136	120	0.0	3	62 35 16 7
+137	106	0.0	3	57 30 11 8
+138	58	0.0	3	30 17 8 3
+139	46	0.0	3	28 9 5 4
+140	28	0.0	3	11 10 4 3
+141	28	0.0	3	14 11 3
+142	23	0.0	3	10 5 4 4
+143	10	0.0	3	5 1 2 2
+144	8	0.0	3	3 3 1 1
+145	5	0.0	3	2 1 1 1
+146	4	0.0	3	1 1 0 2
+147	2	0.0	3	1 0 0 1
+148	1	0.0	3	1
+150	6	0.0	3	1 0 1 4
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_6_S6_R1.fastq
+=============================================
+6514426 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to 'TORN_Pool_6_S6_R2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_6_S6_R2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_6_S6_R2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT' from file TORN_Pool_6_S6_R2.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT TORN_Pool_6_S6_R2.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 115.41 s (18 us/read; 3.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               6,514,426
+Reads with adapters:                 1,831,328 (28.1%)
+Reads written (passing filters):     6,514,426 (100.0%)
+
+Total basepairs processed:   977,163,900 bp
+Quality-trimmed:             238,805,294 bp (24.4%)
+Total written (filtered):    720,076,806 bp (73.7%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 1831328 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 28.5%
+  C: 23.2%
+  G: 32.6%
+  T: 12.5%
+  none/other: 3.2%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	909738	1628606.5	0	909738
+2	492599	407151.6	0	492599
+3	162161	101787.9	0	162161
+4	11354	25447.0	0	11354
+5	6752	6361.7	0	6752
+6	2633	1590.4	0	2633
+7	1144	397.6	0	1144
+8	659	99.4	0	659
+9	728	24.9	0	524 204
+10	1294	6.2	1	613 681
+11	1134	1.6	1	480 654
+12	3313	0.4	1	1430 1883
+13	1268	0.1	1	616 652
+14	2476	0.0	1	1454 1022
+15	515	0.0	1	307 208
+16	703	0.0	1	448 255
+17	664	0.0	1	433 231
+18	432	0.0	1	236 193 3
+19	684	0.0	1	440 227 17
+20	855	0.0	2	372 281 202
+21	497	0.0	2	230 156 111
+22	770	0.0	2	356 267 147
+23	826	0.0	2	347 270 209
+24	1024	0.0	2	487 320 217
+25	628	0.0	2	260 223 145
+26	639	0.0	2	315 190 134
+27	571	0.0	2	272 170 125 4
+28	789	0.0	2	378 216 165 30
+29	693	0.0	2	223 223 181 66
+30	2569	0.0	3	822 669 578 500
+31	593	0.0	3	148 175 137 133
+32	993	0.0	3	374 249 178 192
+33	893	0.0	3	318 246 180 149
+34	1023	0.0	3	385 266 206 166
+35	1954	0.0	3	533 550 472 399
+36	3832	0.0	3	1038 1123 910 761
+37	2564	0.0	3	955 738 524 347
+38	1187	0.0	3	452 317 255 163
+39	895	0.0	3	385 240 158 112
+40	1046	0.0	3	363 294 209 180
+41	1658	0.0	3	631 475 296 256
+42	2029	0.0	3	888 544 360 237
+43	907	0.0	3	265 308 190 144
+44	2028	0.0	3	825 623 345 235
+45	2800	0.0	3	1263 797 459 281
+46	1209	0.0	3	498 351 207 153
+47	880	0.0	3	333 273 154 120
+48	1902	0.0	3	911 494 291 206
+49	1091	0.0	3	522 291 175 103
+50	1029	0.0	3	451 280 183 115
+51	1556	0.0	3	827 371 214 144
+52	526	0.0	3	179 175 95 77
+53	878	0.0	3	480 201 116 81
+54	851	0.0	3	428 208 131 84
+55	1217	0.0	3	518 335 208 156
+56	1468	0.0	3	681 386 232 169
+57	1740	0.0	3	771 450 312 207
+58	1987	0.0	3	826 499 363 299
+59	2268	0.0	3	970 610 400 288
+60	2256	0.0	3	962 600 408 286
+61	2310	0.0	3	943 657 409 301
+62	2535	0.0	3	1093 687 458 297
+63	3033	0.0	3	1345 819 505 364
+64	3471	0.0	3	1481 999 552 439
+65	4901	0.0	3	2139 1337 816 609
+66	7292	0.0	3	3269 1897 1355 771
+67	13922	0.0	3	4913 6170 1906 933
+68	63302	0.0	3	47564 10318 3563 1857
+69	20775	0.0	3	13899 4698 1455 723
+70	6955	0.0	3	4645 1480 535 295
+71	2852	0.0	3	1764 678 260 150
+72	1686	0.0	3	1015 372 180 119
+73	1429	0.0	3	841 310 163 115
+74	1069	0.0	3	618 247 126 78
+75	940	0.0	3	514 221 117 88
+76	931	0.0	3	497 221 127 86
+77	910	0.0	3	500 208 111 91
+78	860	0.0	3	464 197 106 93
+79	684	0.0	3	350 178 85 71
+80	707	0.0	3	381 161 95 70
+81	748	0.0	3	397 173 100 78
+82	649	0.0	3	326 159 85 79
+83	671	0.0	3	315 172 93 91
+84	631	0.0	3	340 142 79 70
+85	683	0.0	3	311 176 128 68
+86	665	0.0	3	326 172 92 75
+87	689	0.0	3	334 178 99 78
+88	701	0.0	3	353 177 90 81
+89	662	0.0	3	353 145 102 62
+90	726	0.0	3	338 169 122 97
+91	699	0.0	3	367 145 115 72
+92	708	0.0	3	354 175 99 80
+93	752	0.0	3	360 190 116 86
+94	708	0.0	3	357 151 102 98
+95	744	0.0	3	373 176 100 95
+96	749	0.0	3	391 180 100 78
+97	702	0.0	3	322 173 118 89
+98	696	0.0	3	364 167 88 77
+99	781	0.0	3	412 184 113 72
+100	802	0.0	3	407 195 107 93
+101	784	0.0	3	412 181 110 81
+102	813	0.0	3	419 192 111 91
+103	814	0.0	3	430 181 103 100
+104	712	0.0	3	383 169 90 70
+105	780	0.0	3	417 203 90 70
+106	790	0.0	3	419 188 105 78
+107	809	0.0	3	424 195 118 72
+108	738	0.0	3	389 171 95 83
+109	778	0.0	3	431 178 98 71
+110	785	0.0	3	433 176 107 69
+111	756	0.0	3	407 171 103 75
+112	757	0.0	3	407 179 102 69
+113	809	0.0	3	463 183 92 71
+114	701	0.0	3	376 168 90 67
+115	750	0.0	3	405 177 101 67
+116	711	0.0	3	388 154 88 81
+117	716	0.0	3	384 152 109 71
+118	676	0.0	3	374 148 84 70
+119	661	0.0	3	376 157 67 61
+120	700	0.0	3	403 141 86 70
+121	638	0.0	3	350 162 75 51
+122	655	0.0	3	362 139 99 55
+123	564	0.0	3	322 121 83 38
+124	586	0.0	3	344 110 71 61
+125	519	0.0	3	301 109 62 47
+126	540	0.0	3	308 115 58 59
+127	411	0.0	3	240 97 32 42
+128	430	0.0	3	259 92 39 40
+129	309	0.0	3	196 58 33 22
+130	256	0.0	3	165 53 20 18
+131	238	0.0	3	132 57 27 22
+132	192	0.0	3	127 43 9 13
+133	178	0.0	3	118 28 18 14
+134	140	0.0	3	91 31 8 10
+135	103	0.0	3	67 11 13 12
+136	103	0.0	3	63 24 10 6
+137	77	0.0	3	53 14 3 7
+138	64	0.0	3	40 7 9 8
+139	37	0.0	3	28 5 4
+140	28	0.0	3	16 5 3 4
+141	35	0.0	3	21 8 4 2
+142	13	0.0	3	9 0 3 1
+143	14	0.0	3	2 2 5 5
+144	4	0.0	3	1 2 0 1
+145	9	0.0	3	2 1 1 5
+146	7	0.0	3	0 0 3 4
+147	6	0.0	3	1 0 1 4
+148	9	0.0	3	0 0 2 7
+149	7	0.0	3	0 0 2 5
+150	14	0.0	3	1 0 4 9
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_6_S6_R2.fastq
+=============================================
+6514426 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files TORN_Pool_6_S6_R1_trimmed.fq and TORN_Pool_6_S6_R2_trimmed.fq
+file_1: TORN_Pool_6_S6_R1_trimmed.fq, file_2: TORN_Pool_6_S6_R2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: TORN_Pool_6_S6_R1_trimmed.fq and TORN_Pool_6_S6_R2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to TORN_Pool_6_S6_R1_val_1.fq
+Writing validated paired-end read 2 reads to TORN_Pool_6_S6_R2_val_2.fq
+
+Total number of sequences analysed: 6514426
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 636444 (9.77%)
+
+Deleting both intermediate output files TORN_Pool_6_S6_R1_trimmed.fq and TORN_Pool_6_S6_R2_trimmed.fq
+
+====================================================================================================
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Path to Cutadapt set as: '/Applications/bio-tools/cutadapt-master/cutadapt' (user defined)
+1.18
+Cutadapt seems to be working fine (tested command '/Applications/bio-tools/cutadapt-master/cutadapt --version')
+Writing report to 'TORN_Pool_7_S7_R1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_7_S7_R1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_7_S7_R1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' from file TORN_Pool_7_S7_R1.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC TORN_Pool_7_S7_R1.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 111.82 s (19 us/read; 3.08 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               5,742,640
+Reads with adapters:                 1,852,826 (32.3%)
+Reads written (passing filters):     5,742,640 (100.0%)
+
+Total basepairs processed:   861,396,000 bp
+Quality-trimmed:              29,844,714 bp (3.5%)
+Total written (filtered):    826,032,700 bp (95.9%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC; Type: regular 3'; Length: 34; Trimmed: 1852826 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 31.4%
+  C: 25.9%
+  G: 32.1%
+  T: 10.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	1096941	1435660.0	0	1096941
+2	510784	358915.0	0	510784
+3	176360	89728.8	0	176360
+4	20819	22432.2	0	20819
+5	3513	5608.0	0	3513
+6	532	1402.0	0	532
+7	291	350.5	0	291
+8	200	87.6	0	200
+9	417	21.9	0	176 241
+10	530	5.5	1	171 359
+11	415	1.4	1	171 244
+12	429	0.3	1	192 237
+13	305	0.1	1	174 131
+14	301	0.0	1	175 126
+15	202	0.0	1	122 80
+16	202	0.0	1	106 96
+17	292	0.0	1	177 115
+18	304	0.0	1	166 136 2
+19	166	0.0	1	83 71 12
+20	256	0.0	2	124 70 62
+21	271	0.0	2	142 71 58
+22	231	0.0	2	96 79 56
+23	266	0.0	2	120 82 64
+24	263	0.0	2	130 78 55
+25	283	0.0	2	147 83 53
+26	148	0.0	2	83 43 22
+27	198	0.0	2	98 47 53
+28	289	0.0	2	122 94 73
+29	226	0.0	2	97 62 57 10
+30	242	0.0	3	89 69 44 40
+31	229	0.0	3	92 71 37 29
+32	296	0.0	3	133 81 51 31
+33	180	0.0	3	70 54 34 22
+34	280	0.0	3	116 79 44 41
+35	280	0.0	3	127 76 44 33
+36	268	0.0	3	100 81 45 42
+37	298	0.0	3	118 81 56 43
+38	368	0.0	3	127 114 67 60
+39	589	0.0	3	181 155 139 114
+40	499	0.0	3	167 140 104 88
+41	398	0.0	3	140 110 83 65
+42	470	0.0	3	157 154 95 64
+43	729	0.0	3	334 189 123 83
+44	203	0.0	3	54 74 42 33
+45	147	0.0	3	59 32 28 28
+46	165	0.0	3	75 43 32 15
+47	345	0.0	3	149 79 64 53
+48	252	0.0	3	100 76 39 37
+49	325	0.0	3	139 90 53 43
+50	283	0.0	3	120 76 50 37
+51	379	0.0	3	170 102 60 47
+52	325	0.0	3	155 83 44 43
+53	408	0.0	3	175 117 63 53
+54	513	0.0	3	224 139 91 59
+55	445	0.0	3	226 98 70 51
+56	243	0.0	3	119 64 32 28
+57	230	0.0	3	112 68 24 26
+58	269	0.0	3	112 81 41 35
+59	273	0.0	3	133 71 40 29
+60	296	0.0	3	127 79 54 36
+61	373	0.0	3	150 112 60 51
+62	226	0.0	3	107 64 28 27
+63	346	0.0	3	161 91 55 39
+64	593	0.0	3	218 160 120 95
+65	1167	0.0	3	457 308 207 195
+66	889	0.0	3	351 255 176 107
+67	486	0.0	3	199 144 85 58
+68	489	0.0	3	208 140 91 50
+69	467	0.0	3	227 131 71 38
+70	473	0.0	3	212 137 76 48
+71	545	0.0	3	244 154 84 63
+72	675	0.0	3	322 170 114 69
+73	795	0.0	3	374 209 117 95
+74	1013	0.0	3	426 282 200 105
+75	1773	0.0	3	706 643 266 158
+76	5158	0.0	3	3491 954 476 237
+77	2691	0.0	3	1586 704 252 149
+78	1118	0.0	3	601 305 143 69
+79	537	0.0	3	283 143 71 40
+80	293	0.0	3	137 87 41 28
+81	270	0.0	3	141 66 33 30
+82	223	0.0	3	103 60 33 27
+83	216	0.0	3	121 47 28 20
+84	179	0.0	3	82 48 33 16
+85	166	0.0	3	79 42 30 15
+86	158	0.0	3	70 41 28 19
+87	182	0.0	3	83 50 33 16
+88	159	0.0	3	64 53 23 19
+89	175	0.0	3	80 42 37 16
+90	151	0.0	3	73 33 25 20
+91	142	0.0	3	54 51 21 16
+92	129	0.0	3	48 35 26 20
+93	150	0.0	3	61 48 25 16
+94	137	0.0	3	69 31 19 18
+95	138	0.0	3	54 31 32 21
+96	133	0.0	3	58 32 24 19
+97	170	0.0	3	70 47 32 21
+98	140	0.0	3	72 31 20 17
+99	128	0.0	3	53 31 25 19
+100	151	0.0	3	66 33 30 22
+101	127	0.0	3	64 24 19 20
+102	171	0.0	3	72 59 25 15
+103	149	0.0	3	65 33 33 18
+104	145	0.0	3	60 47 25 13
+105	134	0.0	3	65 26 31 12
+106	132	0.0	3	51 33 35 13
+107	129	0.0	3	52 34 26 17
+108	142	0.0	3	59 41 28 14
+109	157	0.0	3	65 48 26 18
+110	128	0.0	3	55 29 24 20
+111	132	0.0	3	45 45 22 20
+112	153	0.0	3	72 33 34 14
+113	130	0.0	3	63 34 24 9
+114	145	0.0	3	64 40 24 17
+115	133	0.0	3	62 40 21 10
+116	114	0.0	3	60 21 22 11
+117	107	0.0	3	51 26 18 12
+118	125	0.0	3	60 28 17 20
+119	105	0.0	3	54 26 11 14
+120	126	0.0	3	57 32 20 17
+121	110	0.0	3	65 19 15 11
+122	108	0.0	3	50 25 18 15
+123	92	0.0	3	38 26 20 8
+124	90	0.0	3	48 17 13 12
+125	83	0.0	3	35 24 13 11
+126	92	0.0	3	48 20 18 6
+127	70	0.0	3	32 21 11 6
+128	79	0.0	3	40 21 11 7
+129	64	0.0	3	36 13 11 4
+130	43	0.0	3	28 9 2 4
+131	42	0.0	3	26 5 3 8
+132	38	0.0	3	27 6 3 2
+133	36	0.0	3	14 11 7 4
+134	24	0.0	3	14 6 3 1
+135	21	0.0	3	18 3
+136	17	0.0	3	8 4 4 1
+137	21	0.0	3	14 5 2
+138	14	0.0	3	11 1 1 1
+139	10	0.0	3	5 4 1
+140	6	0.0	3	3 2 1
+141	3	0.0	3	2 0 0 1
+142	3	0.0	3	2 0 0 1
+143	1	0.0	3	0 1
+144	3	0.0	3	1 0 1 1
+145	2	0.0	3	0 2
+146	2	0.0	3	0 1 0 1
+149	2	0.0	3	0 0 0 2
+150	1	0.0	3	0 0 0 1
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_7_S7_R1.fastq
+=============================================
+5742640 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to 'TORN_Pool_7_S7_R2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_7_S7_R2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_7_S7_R2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT' from file TORN_Pool_7_S7_R2.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT TORN_Pool_7_S7_R2.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 105.68 s (18 us/read; 3.26 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               5,742,640
+Reads with adapters:                 1,968,789 (34.3%)
+Reads written (passing filters):     5,742,640 (100.0%)
+
+Total basepairs processed:   861,396,000 bp
+Quality-trimmed:             139,336,250 bp (16.2%)
+Total written (filtered):    715,948,327 bp (83.1%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 1968789 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 32.3%
+  C: 25.2%
+  G: 30.6%
+  T: 10.5%
+  none/other: 1.4%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	1155731	1435660.0	0	1155731
+2	568527	358915.0	0	568527
+3	173082	89728.8	0	173082
+4	13298	22432.2	0	13298
+5	3274	5608.0	0	3274
+6	785	1402.0	0	785
+7	420	350.5	0	420
+8	252	87.6	0	252
+9	419	21.9	0	190 229
+10	695	5.5	1	247 448
+11	513	1.4	1	199 314
+12	1177	0.3	1	579 598
+13	416	0.1	1	210 206
+14	929	0.0	1	611 318
+15	159	0.0	1	101 58
+16	173	0.0	1	101 72
+17	232	0.0	1	164 68
+18	78	0.0	1	37 41
+19	218	0.0	1	153 61 4
+20	155	0.0	2	77 43 35
+21	99	0.0	2	41 32 26
+22	202	0.0	2	103 59 40
+23	281	0.0	2	135 75 71
+24	386	0.0	2	195 100 91
+25	194	0.0	2	95 60 39
+26	233	0.0	2	103 78 52
+27	173	0.0	2	87 49 35 2
+28	261	0.0	2	112 77 68 4
+29	229	0.0	2	79 80 51 19
+30	838	0.0	3	271 212 193 162
+31	138	0.0	3	35 50 34 19
+32	356	0.0	3	158 83 60 55
+33	247	0.0	3	80 79 49 39
+34	273	0.0	3	92 83 58 40
+35	587	0.0	3	176 162 135 114
+36	1276	0.0	3	391 398 279 208
+37	793	0.0	3	308 225 158 102
+38	355	0.0	3	163 94 43 55
+39	212	0.0	3	93 57 34 28
+40	231	0.0	3	87 66 41 37
+41	413	0.0	3	159 121 79 54
+42	590	0.0	3	288 152 89 61
+43	228	0.0	3	62 72 52 42
+44	604	0.0	3	245 190 114 55
+45	945	0.0	3	452 236 156 101
+46	330	0.0	3	132 105 64 29
+47	176	0.0	3	70 52 33 21
+48	590	0.0	3	296 142 96 56
+49	248	0.0	3	133 50 43 22
+50	219	0.0	3	109 61 31 18
+51	423	0.0	3	254 82 55 32
+52	98	0.0	3	31 40 11 16
+53	229	0.0	3	140 56 21 12
+54	185	0.0	3	111 39 22 13
+55	270	0.0	3	135 68 40 27
+56	366	0.0	3	185 100 45 36
+57	296	0.0	3	161 67 39 29
+58	346	0.0	3	159 84 63 40
+59	423	0.0	3	193 120 64 46
+60	405	0.0	3	192 104 58 51
+61	461	0.0	3	202 134 65 60
+62	496	0.0	3	232 120 92 52
+63	591	0.0	3	264 160 95 72
+64	710	0.0	3	327 189 118 76
+65	923	0.0	3	424 254 134 111
+66	1352	0.0	3	609 368 242 133
+67	2594	0.0	3	915 1142 348 189
+68	11434	0.0	3	8638 1789 652 355
+69	3762	0.0	3	2539 825 273 125
+70	1370	0.0	3	897 287 124 62
+71	603	0.0	3	358 136 63 46
+72	384	0.0	3	231 93 33 27
+73	296	0.0	3	159 78 32 27
+74	250	0.0	3	134 50 40 26
+75	183	0.0	3	94 49 23 17
+76	219	0.0	3	111 51 39 18
+77	184	0.0	3	107 44 24 9
+78	183	0.0	3	97 42 25 19
+79	165	0.0	3	85 39 20 21
+80	157	0.0	3	95 30 20 12
+81	168	0.0	3	76 42 31 19
+82	127	0.0	3	55 40 17 15
+83	131	0.0	3	64 30 17 20
+84	134	0.0	3	65 31 20 18
+85	146	0.0	3	76 41 15 14
+86	138	0.0	3	69 33 20 16
+87	123	0.0	3	64 23 16 20
+88	147	0.0	3	63 39 23 22
+89	132	0.0	3	62 32 19 19
+90	140	0.0	3	68 35 25 12
+91	133	0.0	3	58 32 21 22
+92	129	0.0	3	82 24 13 10
+93	149	0.0	3	57 33 31 28
+94	159	0.0	3	78 36 27 18
+95	129	0.0	3	66 31 16 16
+96	156	0.0	3	81 32 28 15
+97	146	0.0	3	66 31 29 20
+98	163	0.0	3	70 39 27 27
+99	160	0.0	3	81 36 28 15
+100	169	0.0	3	85 37 24 23
+101	164	0.0	3	78 39 26 21
+102	180	0.0	3	91 44 23 22
+103	151	0.0	3	90 33 18 10
+104	175	0.0	3	76 42 30 27
+105	182	0.0	3	85 42 35 20
+106	153	0.0	3	76 38 19 20
+107	148	0.0	3	78 34 21 15
+108	173	0.0	3	83 48 24 18
+109	171	0.0	3	89 46 20 16
+110	153	0.0	3	79 31 20 23
+111	167	0.0	3	82 31 25 29
+112	156	0.0	3	89 33 25 9
+113	148	0.0	3	85 29 18 16
+114	139	0.0	3	75 35 17 12
+115	155	0.0	3	91 36 18 10
+116	127	0.0	3	72 23 21 11
+117	129	0.0	3	64 31 21 13
+118	149	0.0	3	78 34 20 17
+119	120	0.0	3	55 26 21 18
+120	130	0.0	3	68 33 19 10
+121	129	0.0	3	66 32 17 14
+122	91	0.0	3	48 22 11 10
+123	125	0.0	3	61 31 19 14
+124	102	0.0	3	63 16 10 13
+125	93	0.0	3	51 18 15 9
+126	84	0.0	3	36 18 15 15
+127	88	0.0	3	53 18 12 5
+128	65	0.0	3	31 13 10 11
+129	66	0.0	3	40 7 10 9
+130	52	0.0	3	30 9 5 8
+131	48	0.0	3	23 10 9 6
+132	38	0.0	3	23 3 7 5
+133	31	0.0	3	20 2 5 4
+134	32	0.0	3	21 8 1 2
+135	22	0.0	3	8 5 4 5
+136	29	0.0	3	16 3 5 5
+137	22	0.0	3	8 10 2 2
+138	13	0.0	3	5 0 2 6
+139	13	0.0	3	7 4 2
+140	11	0.0	3	4 2 2 3
+141	7	0.0	3	1 2 0 4
+142	7	0.0	3	3 1 1 2
+143	10	0.0	3	2 0 3 5
+144	8	0.0	3	0 0 1 7
+145	8	0.0	3	0 0 2 6
+146	9	0.0	3	0 0 3 6
+147	11	0.0	3	0 0 1 10
+148	6	0.0	3	0 0 2 4
+149	8	0.0	3	0 0 3 5
+150	14	0.0	3	0 1 1 12
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_7_S7_R2.fastq
+=============================================
+5742640 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files TORN_Pool_7_S7_R1_trimmed.fq and TORN_Pool_7_S7_R2_trimmed.fq
+file_1: TORN_Pool_7_S7_R1_trimmed.fq, file_2: TORN_Pool_7_S7_R2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: TORN_Pool_7_S7_R1_trimmed.fq and TORN_Pool_7_S7_R2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to TORN_Pool_7_S7_R1_val_1.fq
+Writing validated paired-end read 2 reads to TORN_Pool_7_S7_R2_val_2.fq
+
+Total number of sequences analysed: 5742640
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 493096 (8.59%)
+
+Deleting both intermediate output files TORN_Pool_7_S7_R1_trimmed.fq and TORN_Pool_7_S7_R2_trimmed.fq
+
+====================================================================================================
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Path to Cutadapt set as: '/Applications/bio-tools/cutadapt-master/cutadapt' (user defined)
+1.18
+Cutadapt seems to be working fine (tested command '/Applications/bio-tools/cutadapt-master/cutadapt --version')
+Writing report to 'TORN_Pool_8_S8_R1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_8_S8_R1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_8_S8_R1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' from file TORN_Pool_8_S8_R1.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC TORN_Pool_8_S8_R1.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 92.15 s (21 us/read; 2.84 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               4,358,215
+Reads with adapters:                 1,698,869 (39.0%)
+Reads written (passing filters):     4,358,215 (100.0%)
+
+Total basepairs processed:   653,732,250 bp
+Quality-trimmed:              27,611,820 bp (4.2%)
+Total written (filtered):    617,286,867 bp (94.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC; Type: regular 3'; Length: 34; Trimmed: 1698869 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 31.2%
+  C: 21.9%
+  G: 37.3%
+  T: 9.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	964132	1089553.8	0	964132
+2	459002	272388.4	0	459002
+3	153548	68097.1	0	153548
+4	15765	17024.3	0	15765
+5	2673	4256.1	0	2673
+6	890	1064.0	0	890
+7	897	266.0	0	897
+8	472	66.5	0	472
+9	708	16.6	0	431 277
+10	1212	4.2	1	402 810
+11	1007	1.0	1	371 636
+12	1123	0.3	1	499 624
+13	806	0.1	1	444 362
+14	805	0.0	1	434 371
+15	540	0.0	1	323 217
+16	554	0.0	1	330 224
+17	675	0.0	1	379 296
+18	814	0.0	1	440 364 10
+19	512	0.0	1	303 187 22
+20	554	0.0	2	266 179 109
+21	674	0.0	2	312 213 149
+22	718	0.0	2	336 227 155
+23	714	0.0	2	316 214 184
+24	755	0.0	2	346 249 160
+25	666	0.0	2	342 202 122
+26	403	0.0	2	204 134 65
+27	518	0.0	2	252 162 102 2
+28	678	0.0	2	315 208 151 4
+29	571	0.0	2	240 171 141 19
+30	720	0.0	3	316 188 135 81
+31	592	0.0	3	249 165 114 64
+32	645	0.0	3	279 186 98 82
+33	548	0.0	3	216 181 85 66
+34	736	0.0	3	319 219 110 88
+35	711	0.0	3	295 189 145 82
+36	709	0.0	3	293 193 125 98
+37	893	0.0	3	358 249 162 124
+38	1015	0.0	3	430 266 180 139
+39	552	0.0	3	201 168 115 68
+40	1173	0.0	3	462 297 228 186
+41	1021	0.0	3	374 272 216 159
+42	1142	0.0	3	424 360 202 156
+43	1616	0.0	3	830 373 230 183
+44	498	0.0	3	173 167 88 70
+45	333	0.0	3	163 79 52 39
+46	381	0.0	3	180 100 60 41
+47	693	0.0	3	304 167 134 88
+48	614	0.0	3	275 189 77 73
+49	741	0.0	3	343 194 123 81
+50	667	0.0	3	286 191 125 65
+51	857	0.0	3	405 233 125 94
+52	880	0.0	3	350 247 162 121
+53	953	0.0	3	421 257 159 116
+54	1160	0.0	3	485 334 192 149
+55	1380	0.0	3	667 378 201 134
+56	749	0.0	3	342 198 124 85
+57	645	0.0	3	288 176 122 59
+58	611	0.0	3	295 173 92 51
+59	641	0.0	3	321 176 80 64
+60	745	0.0	3	363 193 111 78
+61	778	0.0	3	378 190 124 86
+62	642	0.0	3	287 186 102 67
+63	924	0.0	3	444 245 151 84
+64	1094	0.0	3	460 291 188 155
+65	1734	0.0	3	771 479 274 210
+66	1726	0.0	3	768 477 278 203
+67	1179	0.0	3	515 349 180 135
+68	1145	0.0	3	533 321 178 113
+69	1197	0.0	3	555 339 163 140
+70	1212	0.0	3	574 314 198 126
+71	1320	0.0	3	658 340 191 131
+72	1523	0.0	3	714 432 231 146
+73	1840	0.0	3	887 496 268 189
+74	2402	0.0	3	1093 677 418 214
+75	4323	0.0	3	1770 1684 594 275
+76	11539	0.0	3	8067 2213 850 409
+77	5821	0.0	3	3587 1498 485 251
+78	2501	0.0	3	1413 672 276 140
+79	1198	0.0	3	656 312 145 85
+80	761	0.0	3	390 209 98 64
+81	586	0.0	3	307 139 74 66
+82	516	0.0	3	264 137 64 51
+83	523	0.0	3	247 134 88 54
+84	461	0.0	3	215 120 71 55
+85	479	0.0	3	229 124 70 56
+86	461	0.0	3	215 118 76 52
+87	404	0.0	3	197 92 59 56
+88	404	0.0	3	188 120 61 35
+89	414	0.0	3	188 116 65 45
+90	432	0.0	3	199 128 61 44
+91	419	0.0	3	186 112 63 58
+92	410	0.0	3	188 91 75 56
+93	389	0.0	3	169 109 61 50
+94	361	0.0	3	171 89 65 36
+95	362	0.0	3	148 109 62 43
+96	414	0.0	3	196 109 63 46
+97	394	0.0	3	194 96 66 38
+98	406	0.0	3	168 110 78 50
+99	387	0.0	3	182 83 64 58
+100	339	0.0	3	148 99 50 42
+101	356	0.0	3	161 103 50 42
+102	379	0.0	3	173 83 74 49
+103	357	0.0	3	151 99 61 46
+104	341	0.0	3	172 76 48 45
+105	369	0.0	3	157 95 73 44
+106	338	0.0	3	157 88 56 37
+107	329	0.0	3	143 97 44 45
+108	319	0.0	3	157 89 33 40
+109	316	0.0	3	144 82 53 37
+110	316	0.0	3	159 76 53 28
+111	312	0.0	3	149 84 48 31
+112	326	0.0	3	162 82 52 30
+113	291	0.0	3	130 73 40 48
+114	314	0.0	3	136 93 50 35
+115	302	0.0	3	154 75 45 28
+116	281	0.0	3	145 71 34 31
+117	289	0.0	3	137 76 47 29
+118	255	0.0	3	104 67 45 39
+119	260	0.0	3	121 67 49 23
+120	219	0.0	3	101 68 25 25
+121	226	0.0	3	99 58 43 26
+122	251	0.0	3	121 71 30 29
+123	228	0.0	3	110 51 37 30
+124	201	0.0	3	91 58 32 20
+125	196	0.0	3	72 55 42 27
+126	160	0.0	3	82 41 20 17
+127	156	0.0	3	64 54 24 14
+128	137	0.0	3	74 37 15 11
+129	109	0.0	3	57 26 20 6
+130	106	0.0	3	65 22 11 8
+131	84	0.0	3	36 30 11 7
+132	64	0.0	3	38 20 3 3
+133	57	0.0	3	36 15 4 2
+134	50	0.0	3	29 15 4 2
+135	34	0.0	3	22 5 4 3
+136	32	0.0	3	17 8 5 2
+137	25	0.0	3	14 8 2 1
+138	9	0.0	3	5 3 1
+139	18	0.0	3	9 3 3 3
+140	10	0.0	3	8 2
+141	7	0.0	3	3 3 1
+142	2	0.0	3	1 1
+144	2	0.0	3	0 0 1 1
+145	1	0.0	3	0 0 0 1
+146	2	0.0	3	2
+148	1	0.0	3	1
+149	5	0.0	3	3 1 0 1
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_8_S8_R1.fastq
+=============================================
+4358215 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to 'TORN_Pool_8_S8_R2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_8_S8_R2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_8_S8_R2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT' from file TORN_Pool_8_S8_R2.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT TORN_Pool_8_S8_R2.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 73.55 s (17 us/read; 3.56 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               4,358,215
+Reads with adapters:                 1,320,851 (30.3%)
+Reads written (passing filters):     4,358,215 (100.0%)
+
+Total basepairs processed:   653,732,250 bp
+Quality-trimmed:             126,145,279 bp (19.3%)
+Total written (filtered):    519,120,696 bp (79.4%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 1320851 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 30.1%
+  C: 28.9%
+  G: 26.6%
+  T: 12.7%
+  none/other: 1.6%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	842534	1089553.8	0	842534
+2	272342	272388.4	0	272342
+3	83978	68097.1	0	83978
+4	8407	17024.3	0	8407
+5	3210	4256.1	0	3210
+6	1314	1064.0	0	1314
+7	876	266.0	0	876
+8	431	66.5	0	431
+9	547	16.6	0	442 105
+10	833	4.2	1	442 391
+11	746	1.0	1	324 422
+12	1288	0.3	1	725 563
+13	704	0.1	1	397 307
+14	1480	0.0	1	967 513
+15	311	0.0	1	197 114
+16	486	0.0	1	335 151
+17	529	0.0	1	360 169
+18	194	0.0	1	96 96 2
+19	469	0.0	1	335 130 4
+20	315	0.0	2	171 86 58
+21	262	0.0	2	131 84 47
+22	501	0.0	2	257 146 98
+23	557	0.0	2	272 164 121
+24	781	0.0	2	387 234 160
+25	373	0.0	2	163 131 79
+26	393	0.0	2	211 112 70
+27	410	0.0	2	218 122 68 2
+28	472	0.0	2	245 128 87 12
+29	393	0.0	2	145 121 94 33
+30	1201	0.0	3	482 330 217 172
+31	286	0.0	3	62 102 71 51
+32	569	0.0	3	253 131 110 75
+33	400	0.0	3	161 114 75 50
+34	524	0.0	3	246 134 87 57
+35	907	0.0	3	306 264 192 145
+36	1452	0.0	3	479 420 317 236
+37	1006	0.0	3	386 277 213 130
+38	629	0.0	3	281 160 108 80
+39	460	0.0	3	213 110 74 63
+40	540	0.0	3	222 146 102 70
+41	858	0.0	3	351 225 165 117
+42	1222	0.0	3	587 305 197 133
+43	418	0.0	3	132 132 98 56
+44	1086	0.0	3	486 288 186 126
+45	1456	0.0	3	686 379 228 163
+46	552	0.0	3	273 134 80 65
+47	485	0.0	3	192 154 83 56
+48	1083	0.0	3	566 284 141 92
+49	618	0.0	3	278 168 108 64
+50	521	0.0	3	225 154 79 63
+51	1110	0.0	3	641 242 131 96
+52	278	0.0	3	91 105 52 30
+53	437	0.0	3	257 84 57 39
+54	412	0.0	3	209 110 58 35
+55	647	0.0	3	317 174 88 68
+56	757	0.0	3	383 188 121 65
+57	704	0.0	3	324 208 104 68
+58	791	0.0	3	394 180 130 87
+59	915	0.0	3	434 233 144 104
+60	993	0.0	3	495 247 153 98
+61	1007	0.0	3	489 253 144 121
+62	1095	0.0	3	501 288 188 118
+63	1271	0.0	3	645 305 181 140
+64	1466	0.0	3	689 396 234 147
+65	2038	0.0	3	961 543 302 232
+66	3059	0.0	3	1431 765 563 300
+67	5490	0.0	3	2050 2341 734 365
+68	24190	0.0	3	17968 3989 1459 774
+69	8338	0.0	3	5490 1942 601 305
+70	3018	0.0	3	1944 658 270 146
+71	1265	0.0	3	762 299 123 81
+72	793	0.0	3	477 163 93 60
+73	685	0.0	3	387 160 80 58
+74	541	0.0	3	287 107 80 67
+75	447	0.0	3	252 107 50 38
+76	428	0.0	3	240 103 53 32
+77	430	0.0	3	235 100 54 41
+78	400	0.0	3	230 82 50 38
+79	384	0.0	3	193 110 52 29
+80	369	0.0	3	197 83 53 36
+81	338	0.0	3	178 63 62 35
+82	287	0.0	3	139 74 37 37
+83	327	0.0	3	186 64 47 30
+84	300	0.0	3	151 74 37 38
+85	312	0.0	3	159 70 48 35
+86	328	0.0	3	156 82 47 43
+87	314	0.0	3	159 79 39 37
+88	315	0.0	3	150 92 39 34
+89	322	0.0	3	165 62 50 45
+90	341	0.0	3	165 86 48 42
+91	336	0.0	3	163 82 56 35
+92	359	0.0	3	181 90 54 34
+93	316	0.0	3	159 74 47 36
+94	346	0.0	3	161 88 59 38
+95	313	0.0	3	162 73 40 38
+96	345	0.0	3	183 77 44 41
+97	366	0.0	3	195 85 52 34
+98	367	0.0	3	198 95 38 36
+99	349	0.0	3	201 77 41 30
+100	371	0.0	3	206 84 41 40
+101	391	0.0	3	195 95 55 46
+102	353	0.0	3	193 79 47 34
+103	384	0.0	3	185 96 54 49
+104	349	0.0	3	214 69 34 32
+105	348	0.0	3	176 86 45 41
+106	361	0.0	3	179 87 56 39
+107	367	0.0	3	199 90 36 42
+108	348	0.0	3	183 74 52 39
+109	329	0.0	3	165 80 48 36
+110	319	0.0	3	159 67 43 50
+111	302	0.0	3	161 61 42 38
+112	317	0.0	3	168 64 50 35
+113	304	0.0	3	155 68 40 41
+114	317	0.0	3	165 75 35 42
+115	333	0.0	3	184 76 46 27
+116	335	0.0	3	188 72 39 36
+117	298	0.0	3	157 72 40 29
+118	278	0.0	3	154 67 33 24
+119	283	0.0	3	145 67 38 33
+120	271	0.0	3	150 58 26 37
+121	251	0.0	3	126 56 39 30
+122	295	0.0	3	173 65 33 24
+123	254	0.0	3	139 55 37 23
+124	219	0.0	3	117 45 34 23
+125	211	0.0	3	121 44 26 20
+126	190	0.0	3	98 39 33 20
+127	161	0.0	3	75 40 28 18
+128	142	0.0	3	84 26 8 24
+129	110	0.0	3	60 23 12 15
+130	97	0.0	3	63 17 9 8
+131	89	0.0	3	57 16 6 10
+132	66	0.0	3	38 14 6 8
+133	77	0.0	3	42 19 9 7
+134	50	0.0	3	37 8 2 3
+135	50	0.0	3	30 5 6 9
+136	35	0.0	3	24 3 5 3
+137	39	0.0	3	29 6 3 1
+138	16	0.0	3	9 5 0 2
+139	21	0.0	3	9 3 3 6
+140	9	0.0	3	5 3 0 1
+141	13	0.0	3	3 4 3 3
+142	4	0.0	3	1 0 0 3
+143	5	0.0	3	1 0 3 1
+144	5	0.0	3	0 0 1 4
+145	3	0.0	3	0 1 0 2
+146	7	0.0	3	0 1 0 6
+147	1	0.0	3	0 0 0 1
+148	8	0.0	3	1 1 2 4
+149	7	0.0	3	1 1 0 5
+150	10	0.0	3	1 0 1 8
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_8_S8_R2.fastq
+=============================================
+4358215 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files TORN_Pool_8_S8_R1_trimmed.fq and TORN_Pool_8_S8_R2_trimmed.fq
+file_1: TORN_Pool_8_S8_R1_trimmed.fq, file_2: TORN_Pool_8_S8_R2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: TORN_Pool_8_S8_R1_trimmed.fq and TORN_Pool_8_S8_R2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to TORN_Pool_8_S8_R1_val_1.fq
+Writing validated paired-end read 2 reads to TORN_Pool_8_S8_R2_val_2.fq
+
+Total number of sequences analysed: 4358215
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 371169 (8.52%)
+
+Deleting both intermediate output files TORN_Pool_8_S8_R1_trimmed.fq and TORN_Pool_8_S8_R2_trimmed.fq
+
+====================================================================================================
+
+No quality encoding type selected. Assuming that the data provided uses Sanger encoded Phred scores (default)
+
+Path to Cutadapt set as: '/Applications/bio-tools/cutadapt-master/cutadapt' (user defined)
+1.18
+Cutadapt seems to be working fine (tested command '/Applications/bio-tools/cutadapt-master/cutadapt --version')
+Writing report to 'TORN_Pool_9_S9_R1.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_9_S9_R1.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_9_S9_R1_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' from file TORN_Pool_9_S9_R1.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC TORN_Pool_9_S9_R1.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 96.22 s (19 us/read; 3.14 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               5,039,221
+Reads with adapters:                 2,241,825 (44.5%)
+Reads written (passing filters):     5,039,221 (100.0%)
+
+Total basepairs processed:   755,883,150 bp
+Quality-trimmed:              56,765,195 bp (7.5%)
+Total written (filtered):    682,761,972 bp (90.3%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC; Type: regular 3'; Length: 34; Trimmed: 2241825 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-34 bp: 3
+
+Bases preceding removed adapters:
+  A: 28.3%
+  C: 16.5%
+  G: 46.9%
+  T: 8.4%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	946119	1259805.2	0	946119
+2	773976	314951.3	0	773976
+3	295153	78737.8	0	295153
+4	14771	19684.5	0	14771
+5	3088	4921.1	0	3088
+6	1377	1230.3	0	1377
+7	1068	307.6	0	1068
+8	978	76.9	0	978
+9	1185	19.2	0	744 441
+10	1983	4.8	1	820 1163
+11	1783	1.2	1	736 1047
+12	2553	0.3	1	1160 1393
+13	1810	0.1	1	936 874
+14	1647	0.0	1	878 769
+15	1080	0.0	1	603 477
+16	1160	0.0	1	650 510
+17	1409	0.0	1	752 657
+18	1913	0.0	1	1094 807 12
+19	921	0.0	1	548 342 31
+20	1012	0.0	2	541 302 169
+21	1055	0.0	2	522 325 208
+22	1165	0.0	2	574 354 237
+23	1334	0.0	2	651 397 286
+24	1358	0.0	2	644 423 291
+25	1346	0.0	2	672 421 253
+26	921	0.0	2	463 292 166
+27	1097	0.0	2	564 330 203
+28	1376	0.0	2	666 415 282 13
+29	1202	0.0	2	606 342 205 49
+30	1563	0.0	3	682 430 259 192
+31	1169	0.0	3	516 346 179 128
+32	1323	0.0	3	652 341 200 130
+33	1058	0.0	3	459 281 202 116
+34	1463	0.0	3	648 410 227 178
+35	1594	0.0	3	624 465 295 210
+36	1782	0.0	3	706 510 313 253
+37	1707	0.0	3	678 489 314 226
+38	1859	0.0	3	730 543 319 267
+39	2241	0.0	3	891 594 436 320
+40	2045	0.0	3	721 613 410 301
+41	2856	0.0	3	1199 792 487 378
+42	2680	0.0	3	958 787 536 399
+43	2728	0.0	3	1378 645 415 290
+44	777	0.0	3	285 251 138 103
+45	770	0.0	3	392 200 100 78
+46	799	0.0	3	361 235 113 90
+47	1723	0.0	3	737 425 332 229
+48	1442	0.0	3	615 396 237 194
+49	1521	0.0	3	726 400 245 150
+50	1393	0.0	3	598 411 230 154
+51	1813	0.0	3	862 476 286 189
+52	1715	0.0	3	719 544 255 197
+53	1888	0.0	3	853 501 315 219
+54	2361	0.0	3	1023 654 388 296
+55	2663	0.0	3	1365 681 340 277
+56	1396	0.0	3	678 388 198 132
+57	1248	0.0	3	593 366 160 129
+58	1251	0.0	3	641 327 154 129
+59	1304	0.0	3	701 340 146 117
+60	1569	0.0	3	748 416 215 190
+61	1744	0.0	3	812 457 275 200
+62	1443	0.0	3	646 414 223 160
+63	1909	0.0	3	908 519 273 209
+64	2341	0.0	3	989 655 420 277
+65	4382	0.0	3	1839 1160 798 585
+66	3935	0.0	3	1842 1083 588 422
+67	2361	0.0	3	1099 632 387 243
+68	2240	0.0	3	1114 590 319 217
+69	2457	0.0	3	1200 659 380 218
+70	2607	0.0	3	1301 681 365 260
+71	2715	0.0	3	1301 759 397 258
+72	3120	0.0	3	1546 877 419 278
+73	3712	0.0	3	1859 984 521 348
+74	4735	0.0	3	2322 1242 797 374
+75	8608	0.0	3	3610 3365 1084 549
+76	22610	0.0	3	16074 4133 1651 752
+77	11528	0.0	3	7193 2899 983 453
+78	4769	0.0	3	2853 1208 478 230
+79	2338	0.0	3	1335 567 287 149
+80	1521	0.0	3	784 418 189 130
+81	1201	0.0	3	629 292 162 118
+82	1039	0.0	3	504 281 151 103
+83	942	0.0	3	479 226 142 95
+84	977	0.0	3	495 248 134 100
+85	894	0.0	3	470 226 120 78
+86	896	0.0	3	409 237 153 97
+87	900	0.0	3	425 249 136 90
+88	800	0.0	3	370 219 120 91
+89	888	0.0	3	389 247 137 115
+90	771	0.0	3	382 201 114 74
+91	806	0.0	3	414 211 116 65
+92	776	0.0	3	358 201 116 101
+93	796	0.0	3	383 200 122 91
+94	761	0.0	3	349 204 112 96
+95	715	0.0	3	351 195 104 65
+96	760	0.0	3	346 191 129 94
+97	753	0.0	3	373 192 110 78
+98	750	0.0	3	354 189 97 110
+99	716	0.0	3	329 175 112 100
+100	739	0.0	3	326 221 108 84
+101	744	0.0	3	338 211 103 92
+102	682	0.0	3	328 182 90 82
+103	702	0.0	3	337 201 116 48
+104	697	0.0	3	324 185 97 91
+105	655	0.0	3	320 157 108 70
+106	661	0.0	3	316 181 101 63
+107	694	0.0	3	313 176 101 104
+108	635	0.0	3	316 179 82 58
+109	668	0.0	3	327 171 91 79
+110	600	0.0	3	296 142 91 71
+111	626	0.0	3	289 160 107 70
+112	608	0.0	3	282 166 95 65
+113	558	0.0	3	292 131 72 63
+114	581	0.0	3	291 154 71 65
+115	552	0.0	3	264 141 76 71
+116	506	0.0	3	237 143 70 56
+117	519	0.0	3	255 132 71 61
+118	519	0.0	3	251 129 81 58
+119	458	0.0	3	236 115 60 47
+120	484	0.0	3	252 109 70 53
+121	499	0.0	3	228 126 75 70
+122	425	0.0	3	209 107 70 39
+123	423	0.0	3	199 114 63 47
+124	375	0.0	3	195 94 48 38
+125	345	0.0	3	176 86 54 29
+126	327	0.0	3	158 79 55 35
+127	299	0.0	3	160 70 39 30
+128	245	0.0	3	132 70 26 17
+129	219	0.0	3	111 52 33 23
+130	198	0.0	3	115 55 18 10
+131	166	0.0	3	105 32 20 9
+132	142	0.0	3	82 34 21 5
+133	115	0.0	3	71 29 13 2
+134	89	0.0	3	51 19 7 12
+135	86	0.0	3	66 12 4 4
+136	59	0.0	3	35 11 7 6
+137	57	0.0	3	34 11 8 4
+138	38	0.0	3	24 9 3 2
+139	19	0.0	3	12 4 3
+140	19	0.0	3	14 1 2 2
+141	10	0.0	3	6 1 2 1
+142	6	0.0	3	4 0 1 1
+143	11	0.0	3	7 0 1 3
+146	2	0.0	3	0 1 0 1
+148	3	0.0	3	0 0 1 2
+149	2	0.0	3	1 0 0 1
+150	1	0.0	3	0 0 0 1
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_9_S9_R1.fastq
+=============================================
+5039221 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Writing report to 'TORN_Pool_9_S9_R2.fastq_trimming_report.txt'
+
+SUMMARISING RUN PARAMETERS
+==========================
+Input filename: TORN_Pool_9_S9_R2.fastq
+Trimming mode: paired-end
+Trim Galore version: 0.5.0
+Cutadapt version: 1.18
+Quality Phred score cutoff: 20
+Quality encoding type selected: ASCII+33
+Adapter sequence: 'AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC' ()
+Maximum trimming error rate: 0.1 (default)
+Optional adapter 2 sequence (only used for read 2 of paired-end files): 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT'
+Minimum required adapter overlap (stringency): 1 bp
+Minimum required sequence length for both reads before a sequence pair gets removed: 20 bp
+
+Writing final adapter and quality trimmed output to TORN_Pool_9_S9_R2_trimmed.fq
+
+
+  >>> Now performing quality (cutoff 20) and adapter trimming in a single pass for the adapter sequence: 'AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT' from file TORN_Pool_9_S9_R2.fastq <<< 
+This is cutadapt 1.18 with Python 3.7.0
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT TORN_Pool_9_S9_R2.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 93.72 s (19 us/read; 3.23 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               5,039,221
+Reads with adapters:                 1,581,715 (31.4%)
+Reads written (passing filters):     5,039,221 (100.0%)
+
+Total basepairs processed:   755,883,150 bp
+Quality-trimmed:             190,277,450 bp (25.2%)
+Total written (filtered):    549,789,584 bp (72.7%)
+
+=== Adapter 1 ===
+
+Sequence: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT; Type: regular 3'; Length: 33; Trimmed: 1581715 times.
+
+No. of allowed errors:
+0-9 bp: 0; 10-19 bp: 1; 20-29 bp: 2; 30-33 bp: 3
+
+Bases preceding removed adapters:
+  A: 27.2%
+  C: 21.6%
+  G: 36.1%
+  T: 13.6%
+  none/other: 1.5%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+1	731158	1259805.2	0	731158
+2	452300	314951.3	0	452300
+3	159220	78737.8	0	159220
+4	9117	19684.5	0	9117
+5	5678	4921.1	0	5678
+6	2461	1230.3	0	2461
+7	1268	307.6	0	1268
+8	847	76.9	0	847
+9	790	19.2	0	651 139
+10	1514	4.8	1	754 760
+11	1284	1.2	1	570 714
+12	3336	0.3	1	1618 1718
+13	1391	0.1	1	724 667
+14	2912	0.0	1	1746 1166
+15	559	0.0	1	338 221
+16	812	0.0	1	502 310
+17	768	0.0	1	528 240
+18	383	0.0	1	219 161 3
+19	794	0.0	1	529 250 15
+20	815	0.0	2	394 241 180
+21	507	0.0	2	233 175 99
+22	854	0.0	2	434 256 164
+23	964	0.0	2	478 279 207
+24	1245	0.0	2	608 378 259
+25	659	0.0	2	281 222 156
+26	794	0.0	2	413 218 163
+27	753	0.0	2	367 229 151 6
+28	930	0.0	2	464 240 206 20
+29	782	0.0	2	253 259 206 64
+30	2764	0.0	3	907 725 617 515
+31	568	0.0	3	151 180 126 111
+32	1206	0.0	3	498 294 225 189
+33	975	0.0	3	338 263 199 175
+34	1189	0.0	3	485 315 221 168
+35	1849	0.0	3	532 533 439 345
+36	4025	0.0	3	1187 1161 984 693
+37	2705	0.0	3	984 791 569 361
+38	1315	0.0	3	513 379 254 169
+39	999	0.0	3	415 264 194 126
+40	1276	0.0	3	473 360 266 177
+41	1792	0.0	3	699 518 330 245
+42	2451	0.0	3	1125 659 394 273
+43	982	0.0	3	283 334 230 135
+44	2322	0.0	3	1044 625 404 249
+45	2901	0.0	3	1372 788 465 276
+46	1226	0.0	3	520 355 201 150
+47	1001	0.0	3	418 295 172 116
+48	1988	0.0	3	1000 531 283 174
+49	1249	0.0	3	573 340 183 153
+50	1079	0.0	3	491 262 194 132
+51	1783	0.0	3	971 434 224 154
+52	538	0.0	3	195 171 100 72
+53	988	0.0	3	556 224 120 88
+54	880	0.0	3	440 226 125 89
+55	1330	0.0	3	623 361 187 159
+56	1598	0.0	3	788 393 246 171
+57	1763	0.0	3	808 446 286 223
+58	1978	0.0	3	871 555 308 244
+59	2068	0.0	3	943 559 352 214
+60	2087	0.0	3	990 501 365 231
+61	2246	0.0	3	1025 600 375 246
+62	2480	0.0	3	1115 666 366 333
+63	2951	0.0	3	1338 816 479 318
+64	3329	0.0	3	1532 883 542 372
+65	4526	0.0	3	2085 1205 703 533
+66	6597	0.0	3	3104 1688 1149 656
+67	12079	0.0	3	4604 5081 1599 795
+68	50188	0.0	3	38121 7891 2776 1400
+69	16519	0.0	3	11134 3739 1066 580
+70	5867	0.0	3	3903 1242 471 251
+71	2454	0.0	3	1499 538 260 157
+72	1437	0.0	3	840 327 144 126
+73	1169	0.0	3	698 239 131 101
+74	992	0.0	3	585 215 105 87
+75	859	0.0	3	458 216 99 86
+76	836	0.0	3	455 185 103 93
+77	820	0.0	3	444 195 87 94
+78	780	0.0	3	419 182 116 63
+79	674	0.0	3	354 161 95 64
+80	662	0.0	3	332 165 96 69
+81	653	0.0	3	354 141 86 72
+82	631	0.0	3	328 142 73 88
+83	587	0.0	3	325 129 72 61
+84	572	0.0	3	282 127 98 65
+85	613	0.0	3	300 151 82 80
+86	636	0.0	3	345 134 93 64
+87	627	0.0	3	327 143 81 76
+88	576	0.0	3	289 137 85 65
+89	664	0.0	3	356 166 79 63
+90	554	0.0	3	313 129 66 46
+91	608	0.0	3	344 124 75 65
+92	648	0.0	3	350 131 105 62
+93	680	0.0	3	371 149 93 67
+94	625	0.0	3	350 124 79 72
+95	665	0.0	3	342 151 96 76
+96	591	0.0	3	306 124 83 78
+97	638	0.0	3	320 156 93 69
+98	647	0.0	3	340 160 75 72
+99	665	0.0	3	350 150 99 66
+100	692	0.0	3	382 145 95 70
+101	695	0.0	3	367 148 98 82
+102	661	0.0	3	366 131 86 78
+103	700	0.0	3	400 132 106 62
+104	717	0.0	3	387 168 97 65
+105	637	0.0	3	348 138 83 68
+106	665	0.0	3	348 155 86 76
+107	650	0.0	3	347 152 92 59
+108	596	0.0	3	326 138 68 64
+109	581	0.0	3	322 115 77 67
+110	598	0.0	3	312 136 93 57
+111	626	0.0	3	331 137 92 66
+112	579	0.0	3	286 137 90 66
+113	579	0.0	3	323 121 71 64
+114	536	0.0	3	287 121 65 63
+115	532	0.0	3	301 110 65 56
+116	537	0.0	3	278 123 78 58
+117	498	0.0	3	301 107 47 43
+118	532	0.0	3	293 109 80 50
+119	476	0.0	3	252 113 57 54
+120	506	0.0	3	268 117 66 55
+121	443	0.0	3	251 92 54 46
+122	430	0.0	3	251 86 56 37
+123	401	0.0	3	244 68 55 34
+124	402	0.0	3	233 92 45 32
+125	344	0.0	3	187 86 42 29
+126	347	0.0	3	190 78 49 30
+127	268	0.0	3	149 61 31 27
+128	230	0.0	3	130 48 39 13
+129	206	0.0	3	126 45 18 17
+130	159	0.0	3	105 34 12 8
+131	130	0.0	3	89 19 12 10
+132	107	0.0	3	68 18 13 8
+133	108	0.0	3	73 20 7 8
+134	93	0.0	3	64 15 7 7
+135	88	0.0	3	48 21 9 10
+136	57	0.0	3	37 5 9 6
+137	44	0.0	3	26 8 6 4
+138	30	0.0	3	18 8 2 2
+139	19	0.0	3	8 7 1 3
+140	16	0.0	3	9 3 1 3
+141	15	0.0	3	7 4 1 3
+142	11	0.0	3	6 1 0 4
+143	5	0.0	3	3 1 0 1
+144	8	0.0	3	3 0 3 2
+145	8	0.0	3	0 0 2 6
+146	8	0.0	3	1 0 1 6
+147	6	0.0	3	0 0 1 5
+148	13	0.0	3	0 0 2 11
+149	4	0.0	3	0 0 0 4
+150	7	0.0	3	1 1 2 3
+
+
+RUN STATISTICS FOR INPUT FILE: TORN_Pool_9_S9_R2.fastq
+=============================================
+5039221 sequences processed in total
+The length threshold of paired-end sequences gets evaluated later on (in the validation step)
+
+Validate paired-end files TORN_Pool_9_S9_R1_trimmed.fq and TORN_Pool_9_S9_R2_trimmed.fq
+file_1: TORN_Pool_9_S9_R1_trimmed.fq, file_2: TORN_Pool_9_S9_R2_trimmed.fq
+
+
+>>>>> Now validing the length of the 2 paired-end infiles: TORN_Pool_9_S9_R1_trimmed.fq and TORN_Pool_9_S9_R2_trimmed.fq <<<<<
+Writing validated paired-end read 1 reads to TORN_Pool_9_S9_R1_val_1.fq
+Writing validated paired-end read 2 reads to TORN_Pool_9_S9_R2_val_2.fq
+
+Total number of sequences analysed: 5039221
+
+Number of sequence pairs removed because at least one read was shorter than the length cutoff (20 bp): 388324 (7.71%)
+
+Deleting both intermediate output files TORN_Pool_9_S9_R1_trimmed.fq and TORN_Pool_9_S9_R2_trimmed.fq
+
+====================================================================================================
+

@@ -26,8 +26,11 @@ In this project I will be developing scripts to generate a phylogenetic tree usi
 - Week 1: Get oriented in Bash, Jupyter, GitHub
 - Week 2: Obtain raw data
 - Week 3: Quality check data and install required programs
-- Week 4: Trim adapters and filter low quality sequences (Step 4)
-- Week 5 (planned): Start assembling filtered reads into contigs (Step 5)
+- Week 4: Trim adapters and filter low quality sequences
+- Week 5: Exploration in using a remote computer
+- Week 6: Start assembling filtered reads into contigs
+- Week 7 (planned): Finish assembling filtered reads into contigs
+- Week 8 (planned): Merge the loci containing more than one contigs
 
 ### Details
 Project Directory Location:
@@ -40,9 +43,10 @@ Contents:
 - `analysis/` Results from various analyses.
    - `fastqc/` Output from fastqc (2018-10-23)
    - `merge/`  Output from cat (2018-10-26)(Empty on GitHub)
-   - `trimgalore/`  Output from trimgalore (2018-10-26)(Empty on GitHub)
+   - `preads/` Output from preads (In Progress)(Empty on GitHub)
+   - `trimgalore/`  Output from trimgalore (2018-10-26)
 - `data/` Contains 28 source .fastq files. (Empty on GitHub)
-- `kuang-et-al-2018/` Contains publication and associated supplamentary material. (Empty on GitHub)
+- `kuang-et-al-2018/` Contains publication and associated supplamentary material.
 - `notebooks/` Jupyter notebooks associated with this project.
     - `main.ipynb`
     - `installation.ipynb`
@@ -65,3 +69,8 @@ Contents:
 2018-10-26
 - Merged multiple lanes. `cat` output in `analysis/merge/`. Trimmed adapters. `trimgalore` output in `analysis/trimgalore/`. `calder-exon-capture.ipynb` renamed `main.ipynb` and moved to `notebooks/`. Created `notebooks/installation.ipynb`
 
+2018-10-30
+- Organized `main.ipynb`.
+
+2018-11-02
+- Renamed `trimgalore` output and moved to `kuang-et-al-2018/scripts-old/preads_script/`. Created `kuang-et-al-2018/kuang-et-al-2018-notes.md`
