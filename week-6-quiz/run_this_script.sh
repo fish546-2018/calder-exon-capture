@@ -8,11 +8,11 @@
 # First, download the files from http://eagle.fish.washington.edu. It will take 10-20min to download.
 
 curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_4_S4_L006_R1_001.fastq > TORN_Pool_4_S4_L006_R1_001.fastq
-curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_4_S4_L006_R1_001.fastq > TORN_Pool_4_S4_L006_R1_001.fastq
+curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_4_S4_L008_R1_001.fastq > TORN_Pool_4_S4_L008_R1_001.fastq
 curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_5_S5_L006_R1_001.fastq > TORN_Pool_5_S5_L006_R1_001.fastq
-curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_5_S5_L006_R1_001.fastq > TORN_Pool_5_S5_L006_R1_001.fastq
+curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_5_S5_L008_R1_001.fastq > TORN_Pool_5_S5_L008_R1_001.fastq
 curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_6_S6_L006_R1_001.fastq > TORN_Pool_6_S6_L006_R1_001.fastq
-curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_6_S6_L006_R1_001.fastq > TORN_Pool_6_S6_L006_R1_001.fastq
+curl http://eagle.fish.washington.edu/fish546/calder/week-6-quiz-data/TORN_Pool_6_S6_L008_R1_001.fastq > TORN_Pool_6_S6_L008_R1_001.fastq
 
 # Move the downloaded files into a separate folder.
 
