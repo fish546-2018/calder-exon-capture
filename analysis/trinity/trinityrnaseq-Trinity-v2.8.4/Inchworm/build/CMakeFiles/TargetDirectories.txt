@@ -1,0 +1,9 @@
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/install/local.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/install/strip.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/install.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/list_install_components.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/fastaToKmerCoverageStats.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/rebuild_cache.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/edit_cache.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/FastaToDeBruijn.dir
+/Users/calderatta/Downloads/trinityrnaseq-Trinity-v2.8.4/Inchworm/build/CMakeFiles/inchworm.dir
