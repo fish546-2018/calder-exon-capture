@@ -1,0 +1,139 @@
+
+Unzip files(local)
+
+Function: Unzip all .gz files
+Input file: folder contains all .gz files(gz), gunzip_Files.pl 
+Output file: unziped files(fastq)
+Usage example:
+$ ./gunzip_Files.pl -dir=dirname
+
+_______________________________________________
+
+Merge file(local)
+
+Function: Merge the data on lane1 and lane2 together
+Input file: unziped fastq files(.fastq)
+Output file: merged files(.fastq)
+Usage example:
+$   (for i in *_L001_R1_001.fastq; do cat ${i%_L001_R1_001.fastq}_L001_R1_001.fastq ${i%_L001_R1_001.fastq}_L002_R1_001.fastq > ${i%_L001_R1_001.fastq}_R1.fastq; done)
+   
+$   (for i in *_L001_R2_001.fastq; do cat ${i%_L001_R2_001.fastq}_L001_R2_001.fastq ${i%_L001_R2_001.fastq}_L002_R2_001.fastq > ${i%_L001_R2_001.fastq}_R2.fastq; done)
+
+________________________________________________
+
+
+Trim galore(local)
+
+Function: Trim the adapter and low quality reads in fastq file
+Input file: merged fastq files(.fastq)
+Output file: trimmed files(.fq)
+Usage example: 
+$    (for i in *_R1.fastq; do trim_galore -a AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC -a2 AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT --paired ${i%_R1.fastq}_R1.fastq ${i%_R1.fastq}_R2.fastq; done) >& trim.log.txt
+
+________________________________________________
+
+Preads(cluster)
+
+Function: Remove replicates in trimmed file, and parse them into corresponding genes
+Input file: baits sequences, all *.fq files, rmrep.pl, bandp.pl, data.pm
+Output file: gene files containing corresponding reads(.fq)
+Usage example:
+
+*.sh format 
+###########################################################################
+
+
+#!/bin/bash
+
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=240:00:00
+#PBS -N preads1
+
+
+
+cd /home/users/chenhongli/thirdstore/zx/preads
+
+./rmrep.pl -taxalist="558_1"
+
+./bandp.pl -query="Python_molurus" -subject="558_1" > preads.1.log.txt
+
+exit 0
+
+
+
+###########################################################################
+________________________________________________
+
+Trinity(cluster)
+
+Function: Assemble the reads to short contigs 
+Input file:samplename_results (preads result) folder contains gene files, runtrinity.pl, .sh file
+Output file:.fasta files named in format of "gene name.Trinity.fasta" 
+Usage example:
+
+*.sh format
+###########################################################################
+
+
+#!/bin/bash
+
+#PBS -l nodes=1:ppn=10
+#PBS -l walltime=240:00:00
+#PBS -N runtrinity15
+
+
+
+cd /home/users/chenhongli/temp2/trinityrnaseq_r20140717
+
+./runtrinity.pl -species="samplename1 samplename2" > runtrinity15.log
+
+exit 0   
+
+
+ 
+###########################################################################
+________________________________________________
+
+Trinity to Geneious(local)
+
+Function: move trinity output from cluster and pre-process for geneious assemble
+
+1. After Trinity, move all fasta file to corresponding folder for each sample(cluster)
+Input file: the folder placing all the trinity results, mv_trinity.pl        
+Output file: folder containing fasta files for each sample 
+Usage example: 
+$  ./mv_trinity.pl -species="samplename1 samplename2 samplename3 ..." -outdir=outdirname
+
+2. compress all the files and download
+
+3. Identify files with one or more contigs and put file with one contig in a folder, two or more contigs in another folder
+Input file: Output file in step 1, idcontig.pl
+Output file: one folder for each sample contains one contig in each gene file, and another contains more than one contig in each gene file.  
+Usage example:
+$ ./idcontig.pl -species="samplename1 samplename2 samplename3 ..."
+
+________________________________________________
+
+Geneious(local)
+
+Function: Assemble short contigs to long contigs
+1. Import the gene files in *_geneious2
+2. De novo assemble on batch
+3. Batch export to folders named by sample name which are placed under the same folder containing all geneious output
+
+________________________________________________
+
+Geneious to getbest.pl(local)
+
+Function 1: cat the file with same gene in geneious output first 
+Function 2: unwrap the sequence in the file with only one contig
+Function 3: merge the processed files in (1) and (2) together according to the sample ID
+Input file: folder containing folders named by *_geneious1, folder containing folders of geneious output named by sample name, geneious2getbest.pl
+Output file: folder named by merged_geneious1_geneious2 including all the assembled contigs for each sample
+Usage example:
+$  ./geneious2getbest.pl -species="samplename1 samplename2 samplename3" -geneious1=foldername1(folder with *_geneious1 folder) -geneious2=foldername2(folder with geneious output)
+
+________________________________________________
+getbest.pl 
+
+Need to be modified for analysis requiring partition
