@@ -1,0 +1,5 @@
+svg("fig-bowtie-pie.svg",width=4,height=4, bg=NA)
+slices <- c(2758315, 4028+2634)
+lbls <- c("Not Aligned", "Aligned")
+pie(slices, labels = lbls, main=NULL)
+dev.off()

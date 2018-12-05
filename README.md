@@ -1,4 +1,5 @@
 # Exon-capture to Phylogeny
+##### FISh 546 - Bioinformatics ([course repo](https://github.com/sr320/course-fish546-2018/wiki))
 
 ***
 
@@ -58,7 +59,7 @@ Contents:
     - `installation.ipynb`
     - `main.ipynb`
     - `Tmux-Jupyter.md`
-- `presentation/` Course presentation material. (Empty on GitHub)
+- `presentation/` Course presentation material.
 - `README.md` You Are Here! Contains details about project, organization, and history.
 - `screenshots/`
 - `scripts/` Contains scripts used for analyses and pipeline for using them.
@@ -102,3 +103,6 @@ Contents:
 
 2018-12-03
 - Problem scripts identified as outdated moved from `scripts/` to new diectory `scripts-outdated/`.
+
+2018-12-05
+- Added `presentation/` files to GitHub.
