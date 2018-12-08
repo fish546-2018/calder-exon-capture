@@ -48,6 +48,7 @@ Contents:
    - `merge/`  Output from cat (2018-10-26)(Empty on GitHub)
    - `preads-bandp/` Output from bandp (2018-11-15)(Empty on GitHub)
    - `preads-rmrep/` Output from rmrep (2018-11-05)(Empty on GitHub)
+   - `R/` R project and scripts (2018-12-05)
    - `trimgalore/`  Output from trimgalore (2018-10-26)
    - `trinity/` Output from Trinity (In progress...)
 - `data/` Contains 28 source .fastq files. (Empty on GitHub)
@@ -106,3 +107,6 @@ Contents:
 
 2018-12-05
 - Added `presentation/` files to GitHub.
+
+2018-12-07
+- Final GitHub commit and release.
